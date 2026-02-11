@@ -1,0 +1,104 @@
+{
+    "analyseProduit": {
+        "nomProduit": "LOTO-AI",
+        "resume": "Plateforme hybride (Web/Mobile) pour la gestion du cadenassage industriel. Elle utilise l'IA pour assister les techniciens dans la création de fiches de sécurité (LOTO), de la capture de données sur le terrain (offline-first) jusqu'à la validation par un expert, garantissant la conformité normative et la standardisation."
+    },
+    "parcoursUtilisateurs": [
+        {
+            "role": "Intégrateur (Concepteur)",
+            "nomPersona": "Marc Dubois",
+            "initiale": "M",
+            "description": "Technicien de terrain expérimenté, responsable de la création des procédures de cadenassage. Il travaille souvent dans des environnements industriels bruyants, sales et avec une connectivité réseau limitée.",
+            "citation": "Il faut que ça aille vite sur le terrain, je n'ai pas le temps de taper du texte avec mes gants. L'important, c'est de capturer l'info juste, le plus vite possible.",
+            "couleurTheme": "#3b82f6",
+            "etapes": [
+                {
+                    "phase": "Acquisition Terrain (Mobile)",
+                    "action": "Capturer les données d'un équipement",
+                    "details": "En tant qu'Intégrateur, je veux utiliser mon mobile pour créer une nouvelle fiche, scanner la plaque machine (OCR) et prendre des photos des points de coupure en enregistrant des notes audio pour chaque, le tout sans connexion internet.",
+                    "pointDouleur": "Le scan OCR échoue sur une plaque sale ou l'application est lente, me faisant perdre un temps précieux sur le plancher."
+                },
+                {
+                    "phase": "Rédaction Assistée (Web)",
+                    "action": "Assembler la fiche de cadenassage",
+                    "details": "Je veux retrouver mes brouillons sur le 'Cockpit' web, glisser-déposer mes photos dans le gabarit et laisser l'IA générer une première version complète des étapes à partir de mes notes vocales et des plans techniques.",
+                    "pointDouleur": "La transcription audio de l'IA est imprécise à cause du bruit ambiant de l'usine, ce qui me force à tout réécrire manuellement."
+                },
+                {
+                    "phase": "Finalisation & Conformité (Web)",
+                    "action": "Vérifier et soumettre la fiche",
+                    "details": "Je veux lancer l'analyse de conformité IA pour identifier les oublis critiques (ex: énergie résiduelle) et remplir la checklist obligatoire avant de soumettre la fiche à l'auditeur.",
+                    "pointDouleur": "L'IA génère des alertes de non-conformité vagues ou des faux positifs, ce qui ralentit la soumission."
+                },
+                {
+                    "phase": "Correction Post-Revue (Web)",
+                    "action": "Appliquer les corrections de l'auditeur",
+                    "details": "Je veux recevoir des notifications claires sur les points à corriger, lire les commentaires de l'auditeur et utiliser la fonction 'Fix with AI' pour appliquer les changements avant de soumettre à nouveau.",
+                    "pointDouleur": "Les allers-retours avec l'auditeur sont nombreux et il est difficile de voir précisément quelles modifications ont été demandées entre deux versions."
+                }
+            ]
+        },
+        {
+            "role": "Auditeur (Approbateur)",
+            "nomPersona": "Céline Bernard",
+            "initiale": "C",
+            "description": "Ingénieure senior et experte en Santé et Sécurité au Travail (SST). Sa responsabilité est de garantir que chaque procédure est 100% conforme aux normes et absolument sans risque avant son déploiement.",
+            "citation": "La sécurité ne tolère aucune approximation. Chaque étape doit être limpide, justifiée et conforme à la norme CSA Z460.",
+            "couleurTheme": "#8b5cf6",
+            "etapes": [
+                {
+                    "phase": "Revue & Analyse (Web)",
+                    "action": "Évaluer une fiche soumise",
+                    "details": "En tant qu'Auditeur, je veux être notifié d'une fiche en attente, l'ouvrir en lecture seule et analyser chaque étape pour vérifier sa conformité technique et normative.",
+                    "pointDouleur": "La navigation dans la fiche est peu intuitive et il est difficile de comparer la procédure avec les plans techniques dans la même interface."
+                },
+                {
+                    "phase": "Annotation & Rejet (Web)",
+                    "action": "Commenter les non-conformités",
+                    "details": "Je veux pouvoir cliquer sur une étape ou une photo spécifique pour y attacher un commentaire précis et non-ambigu (ex: 'Ce disjoncteur est incorrect, utiliser le B-45 du panneau électrique X').",
+                    "pointDouleur": "L'outil de commentaire manque de précision et ne permet pas d'annoter directement sur une zone de l'image."
+                },
+                {
+                    "phase": "Approbation Finale (Web)",
+                    "action": "Valider et signer numériquement",
+                    "details": "Une fois toutes les corrections conformes, je veux approuver la fiche d'un clic, ce qui appose ma signature numérique, la date, et la verrouille en version officielle et immuable.",
+                    "pointDouleur": "Le processus de signature numérique est complexe ou requiert une authentification multi-facteurs fastidieuse à chaque validation."
+                }
+            ]
+        },
+        {
+            "role": "Administrateur",
+            "nomPersona": "Stéphane Lambert",
+            "initiale": "S",
+            "description": "Responsable de la configuration et de la maintenance de la plateforme LOTO-AI pour l'ensemble du groupe. Il s'assure que l'outil est standardisé et que les accès sont gérés correctement.",
+            "citation": "Toutes les fiches de toutes nos usines doivent suivre exactement le même gabarit. La standardisation est la clé de la sécurité à grande échelle.",
+            "couleurTheme": "#14b8a6",
+            "etapes": [
+                {
+                    "phase": "Configuration Initiale (Web)",
+                    "action": "Configurer les gabarits de fiches",
+                    "details": "En tant qu'Administrateur, je veux utiliser le 'Template Builder' pour définir la structure visuelle des fiches (logo, en-tête, colonnes) et importer un layout depuis un fichier Excel existant pour accélérer le déploiement.",
+                    "pointDouleur": "L'outil de création de gabarits est trop rigide et ne permet pas de répliquer à l'identique les formats existants, créant une résistance au changement."
+                },
+                {
+                    "phase": "Paramétrage des Règles (Web)",
+                    "action": "Définir la logique métier et normative",
+                    "details": "Je veux configurer la matrice d'énergie (icônes, nomenclatures), les 'snippets' de textes légaux (RSST/Z460) et les règles conditionnelles de l'IA (ex: si 'électrique', forcer 'vérification multimètre').",
+                    "pointDouleur": "La création de règles conditionnelles est limitée à des cas simples et ne permet pas de gérer des logiques de sécurité plus complexes."
+                },
+                {
+                    "phase": "Gestion des Utilisateurs (Web)",
+                    "action": "Gérer les accès et les rôles",
+                    "details": "Je veux inviter de nouveaux utilisateurs, leur assigner le bon rôle (Intégrateur, Auditeur) pour une usine spécifique et révoquer les accès des employés qui quittent l'entreprise, le tout depuis une interface centralisée.",
+                    "pointDouleur": "La gestion des permissions n'est pas assez granulaire (ex: impossible de donner un accès en lecture seule à un manager de département)."
+                },
+                {
+                    "phase": "Monitoring Global (Web)",
+                    "action": "Superviser l'activité de la plateforme",
+                    "details": "Je veux accéder à un tableau de bord pour suivre des indicateurs clés (temps moyen d'approbation, erreurs fréquentes) afin d'identifier les goulots d'étranglement ou les besoins de formation.",
+                    "pointDouleur": "Les statistiques sont trop basiques et il est impossible d'exporter des données brutes pour une analyse plus approfondie dans nos outils de BI."
+                }
+            ]
+        }
+    ]
+}

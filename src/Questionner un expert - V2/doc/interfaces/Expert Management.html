@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expert Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0077ff",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0f1823",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .material-symbols-outlined.fill {
+           font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root">
+<!-- Sticky Top App Bar with backdrop blur -->
+<header class="sticky top-0 z-10 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-lg border-b border-gray-200/50 dark:border-white/10">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center"></div>
+<h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white flex-1 text-center">Expert Management</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-primary">
+<span class="material-symbols-outlined !text-3xl">add_circle</span>
+</button>
+</div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-gray-500 dark:text-gray-400 flex border-none bg-gray-100 dark:bg-white/10 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-gray-100 dark:bg-white/10 h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by name or expertise..." value=""/>
+</div>
+</label>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 pb-24 px-4 pt-4 space-y-4">
+<!-- Expert List Item 1 -->
+<div class="flex flex-col gap-3 bg-white dark:bg-white/5 p-4 rounded-xl shadow-sm shadow-gray-200/50 dark:shadow-none">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Elara Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDb8DnOtvRWM0_Sqwm2rF39XoPfyO4RRnkooHuSxYT1GsccKUN27pjpSMLfKKWBAq0M6pz_EfD1gqXoIEuO2KJqoYi5S7liP-zX9NQWf-A549MDnBUvbQJDvJstIwILMMVA61AJwFURQI4u-988iOaK7rRC9u253z4OiiU0oqWJYT-c82VBy4IIdTKQjgggNRcpo4LzKTA42gxosxlP69vTd7_UWh3KWzasWYPGYWHujtL3IMkif6FCyV1bsgUd8zPW6X--A6Bbzopv");'></div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Elara Vance</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Lead AI Researcher</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">AI</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Machine Learning</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">NLP</p>
+</div>
+</div>
+</div>
+<!-- Expert List Item 2 -->
+<div class="flex flex-col gap-3 bg-white dark:bg-white/5 p-4 rounded-xl shadow-sm shadow-gray-200/50 dark:shadow-none">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Marcus Thorne" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5svw4bgNCaC3mjiNJOipn_TPY5DvabYUBPMleXbaZcjdFhAnxXHccEfiRHBzrbv0VBQmMV8oqy97ByXjov6M_DNCfxgC7NohL7uHQHBrvk4-dkaIUeqAvu8huLxhTlOOODXepWUPm43b2Nnb64baXv0uKoD5KfM_Xl4PaMHQBQYFPokaNgITRfVxSpiZTAgRhBqzQtIqCV6IhhQb7SIQPWuHG7C03TtVSmuXKXKBtbhvmP-CwwegOIbbMAEinYITstiq5fEQb4ySe");'></div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Marcus Thorne</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">Cybersecurity Analyst</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Cloud Security</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Penetration Testing</p>
+</div>
+</div>
+</div>
+<!-- Expert List Item 3 -->
+<div class="flex flex-col gap-3 bg-white dark:bg-white/5 p-4 rounded-xl shadow-sm shadow-gray-200/50 dark:shadow-none">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Lena Petrova" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdRxFd_IGl7nBLmkQftZKM_RvEKoZBSddWdeHsgxEgcL4tAjUvJBnsHjEs-9XHscTaLLaqYrS3BiGqgE7Gkd_yRkB6TjSNHS-lWLR8CBZ5dVC7M_15MaL4Eho2P84SEaMEb3PmTYa-CdfH-XXrkzrd8_SeHGrh1GJpilWpsWDbHWVNUS4ieCUSIfkOanZUBuY5bM2lMVZK6iK56aqkXS25VvSqVEF8D6JKpbu09zQNQNy29k_N5y0BvrHiHgPeJ-qeLaMuFVtfAdZk");'></div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Lena Petrova</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">HR Policy Director</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">HR Policy</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Compliance</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Employee Relations</p>
+</div>
+</div>
+</div>
+<!-- Expert List Item 4 -->
+<div class="flex flex-col gap-3 bg-white dark:bg-white/5 p-4 rounded-xl shadow-sm shadow-gray-200/50 dark:shadow-none">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Kenji Tanaka" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3hc8x6eHQ5jxgvppaOVBDejjlgT2pXxO_ImKDL8VZIPRiNErUNHbsSB9bC4rxzyDH5Kw49TlfCnUaIbEdDnPiMolyAB9lkGDjHauONC4DNzHX6lCAf90zOtZzuuW2PFSHrny3j2XGIqSlfznRahz592ln1HMIJU-60JEuRkE6x0ZJXY42131RXPIvvJFa8d-8dpDeOjESEDAXHd9EFC6DPLk0210MNLusRYxxHdYUmo0VblctDiuWiU42NRc6n3zr-ZAF090Y2gVh");'></div>
+<div class="flex flex-col justify-center flex-1">
+<p class="text-gray-900 dark:text-white text-base font-semibold leading-normal line-clamp-1">Kenji Tanaka</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal line-clamp-2">DevOps Engineer</p>
+</div>
+<div class="shrink-0">
+<div class="text-gray-400 dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">CI/CD</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">Kubernetes</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/10 pl-3 pr-3">
+<p class="text-primary text-sm font-medium leading-normal">AWS</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Sticky Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-gray-200/50 dark:border-white/10">
+<div class="flex h-20 items-center justify-around px-4">
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">search</span>
+<span class="text-xs font-medium">Search</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">quiz</span>
+<span class="text-xs font-medium">Questions</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined fill">person</span>
+<span class="text-xs font-semibold">Profile</span>
+</div>
+</div>
+</nav>
+</div>
+</body></html>

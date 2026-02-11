@@ -1,0 +1,234 @@
+{
+    "project_name": "Expert Knowledge Loop",
+    "unique_tags": [
+        "List",
+        "Filter",
+        "Task Management",
+        "Priority",
+        "Chat",
+        "AI",
+        "Messaging",
+        "Input",
+        "Redirection",
+        "Search",
+        "Selection",
+        "Admin",
+        "Directory",
+        "Cards",
+        "Form",
+        "Voice Input",
+        "Answer",
+        "Editor",
+        "Browsing",
+        "Categories",
+        "Tags",
+        "Tree View",
+        "CRUD",
+        "Preferences",
+        "Toggles",
+        "Notifications",
+        "Dark Mode",
+        "Modal",
+        "Source",
+        "Details",
+        "Overlay",
+        "Feedback",
+        "Validation",
+        "Stats",
+        "Charts",
+        "Analytics",
+        "Metrics",
+        "Creation"
+    ],
+    "unique_categories": [
+        "Expertise Workflow",
+        "Chatbot",
+        "Administration",
+        "Knowledge Base",
+        "Settings",
+        "Dashboard",
+        "Content Creation"
+    ],
+    "interfaces": [
+        {
+            "id": "1",
+            "interface_name": "Pending Questions",
+            "description": "Cette interface affiche une liste de questions en attente de réponse. Chaque élément de la liste présente la question, l'auteur, la date de la question, la catégorie et un indicateur de priorité. L'utilisateur peut filtrer les questions par date ou par sujet.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980778847_stitch_mes_questions_en_attente_expert_pending_questions_-_expert_view/screen_1765980779060_45df33c9-9aa9-4337-8981-40374cb19d71.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980778847_stitch_mes_questions_en_attente_expert_pending_questions_-_expert_view/code_1765980778948_d6f3ddce-6d18-4b9d-ad00-77c1471b8fb0.html",
+            "category": "Expertise Workflow",
+            "tags": [
+                "List",
+                "Filter",
+                "Task Management",
+                "Priority"
+            ]
+        },
+        {
+            "id": "2",
+            "interface_name": "Chatbot User Home",
+            "description": "Interface de chat avec un assistant IA. On y voit un échange de messages, une réponse détaillée sur les objectifs, un champ de saisie avec microphone et une barre de navigation inférieure.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980787945_stitch_mes_questions_en_attente_expert_chatbot_-_user_home/screen_1765980788116_0bc1f15d-fb32-4ef3-9d6c-108fe13eb8ad.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980787945_stitch_mes_questions_en_attente_expert_chatbot_-_user_home/code_1765980788015_ab2ddb8e-b9be-43b7-b8e4-64c5c63c5385.html",
+            "category": "Chatbot",
+            "tags": [
+                "Chat",
+                "AI",
+                "Messaging",
+                "Input"
+            ]
+        },
+        {
+            "id": "3",
+            "interface_name": "Redirect Question",
+            "description": "Interface de redirection permettant à un expert de transférer une question. Inclut une recherche d'experts, une liste avec sélection par boutons radio et une validation.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980795308_stitch_mes_questions_en_attente_expert_redirect_question_-_expert/screen_1765980795465_986369b8-7a4d-49f2-9263-764f05f49166.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980795308_stitch_mes_questions_en_attente_expert_redirect_question_-_expert/code_1765980795361_3dcd6f40-754a-4d8b-ba44-9c1c81958d01.html",
+            "category": "Expertise Workflow",
+            "tags": [
+                "Redirection",
+                "Search",
+                "List",
+                "Selection"
+            ]
+        },
+        {
+            "id": "4",
+            "interface_name": "Expert Management",
+            "description": "Système de gestion d'experts affichant une liste de cartes avec profils et domaines d'expertise. Inclut des fonctions de recherche, filtrage et ajout de nouveaux experts.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980802160_stitch_mes_questions_en_attente_expert_expert_management/screen_1765980802329_1732a60d-0fb6-434b-9ec0-824eedde6bc3.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980802160_stitch_mes_questions_en_attente_expert_expert_management/code_1765980802222_d47d3ff4-5729-4f3e-b2f2-d3a64ff88eef.html",
+            "category": "Administration",
+            "tags": [
+                "Admin",
+                "Directory",
+                "Cards",
+                "Search"
+            ]
+        },
+        {
+            "id": "5",
+            "interface_name": "Respond to Question",
+            "description": "Écran permettant à un expert de répondre à une question spécifique. Comprend l'affichage de la question, un champ de réponse textuelle, une option de dictée vocale et des options avancées.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980813157_stitch_mes_questions_en_attente_expert_respond_to_question_-_expert/screen_1765980813316_c2ecb62d-2b0f-4f72-99af-87ed0069e47b.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980813157_stitch_mes_questions_en_attente_expert_respond_to_question_-_expert/code_1765980813228_ee2b1a1b-f426-43bb-b101-5af566ae7d83.html",
+            "category": "Expertise Workflow",
+            "tags": [
+                "Form",
+                "Voice Input",
+                "Answer",
+                "Editor"
+            ]
+        },
+        {
+            "id": "6",
+            "interface_name": "Q&A Knowledge Base",
+            "description": "Interface d'exploration de la base de connaissances. Permet de naviguer par catégories (Engineering, HR, etc.), de voir les questions existantes avec leurs tags et d'initier une nouvelle question.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980822242_stitch_mes_questions_en_attente_expert_q_a_list/screen_1765980822444_cb8d9749-ea6b-42ca-8929-5529259e4b04.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980822242_stitch_mes_questions_en_attente_expert_q_a_list/code_1765980822316_bb68d311-276d-435f-8679-5de6f4007285.html",
+            "category": "Knowledge Base",
+            "tags": [
+                "Browsing",
+                "Categories",
+                "List",
+                "Search"
+            ]
+        },
+        {
+            "id": "7",
+            "interface_name": "Tag Management",
+            "description": "Interface de gestion des tags hiérarchisés. Permet de voir, rechercher et créer des tags organisés par catégories (Départements, Produits, Clients) avec des listes déroulantes.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980830279_stitch_mes_questions_en_attente_expert_tag_management/screen_1765980830477_63b82057-d115-4838-9f4c-12b241fe956d.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980830279_stitch_mes_questions_en_attente_expert_tag_management/code_1765980830335_4c89cfc2-ee54-42c9-ae0f-4365f197c1a9.html",
+            "category": "Administration",
+            "tags": [
+                "Admin",
+                "Tags",
+                "Tree View",
+                "CRUD"
+            ]
+        },
+        {
+            "id": "8",
+            "interface_name": "User Settings",
+            "description": "Écran de paramètres utilisateur permettant de configurer les notifications (Email, SMS) et l'apparence de l'application (Mode sombre) via des interrupteurs.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980837504_stitch_mes_questions_en_attente_expert_user_settings/screen_1765980837729_1ab828d3-98f3-48b5-a087-f4c227122a12.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980837504_stitch_mes_questions_en_attente_expert_user_settings/code_1765980837566_582d6128-b30c-4302-9e9a-d97931f1414d.html",
+            "category": "Settings",
+            "tags": [
+                "Preferences",
+                "Toggles",
+                "Notifications",
+                "Dark Mode"
+            ]
+        },
+        {
+            "id": "9",
+            "interface_name": "Q&A Source Detail",
+            "description": "Pop-up 'Source' affichant le détail d'un échange Q&A cité par le chatbot. Affiche la question originale, la réponse vérifiée, les dates et un lien de partage.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980845712_stitch_mes_questions_en_attente_expert_q_a_source_pop-up/screen_1765980845891_3499052f-9827-4b21-8392-8ffe9f222df5.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980845712_stitch_mes_questions_en_attente_expert_q_a_source_pop-up/code_1765980845781_4e3a7125-96af-4a44-b990-81e9ad0b67d1.html",
+            "category": "Chatbot",
+            "tags": [
+                "Modal",
+                "Source",
+                "Details",
+                "Overlay"
+            ]
+        },
+        {
+            "id": "10",
+            "interface_name": "Expert Notifications",
+            "description": "Liste de notifications demandant à l'expert de valider la pertinence de ses réponses passées utilisées récemment par le chatbot (Feedback Loop).",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980856974_stitch_mes_questions_en_attente_expert_expert_notifications_-_usage/screen_1765980857189_cca13d32-333f-4dbe-872b-f23785ff3bc6.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980856974_stitch_mes_questions_en_attente_expert_expert_notifications_-_usage/code_1765980857038_21e27c30-5601-4245-9677-97ba674301f4.html",
+            "category": "Expertise Workflow",
+            "tags": [
+                "Feedback",
+                "Validation",
+                "Notifications",
+                "List"
+            ]
+        },
+        {
+            "id": "11",
+            "interface_name": "Dashboard Statistics",
+            "description": "Tableau de bord affichant des statistiques globales et personnelles (nombre d'experts, Q&A, vues) avec un graphique à barres pour les vues sur 30 jours.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980865977_stitch_mes_questions_en_attente_expert_dashboard_-_statistics/screen_1765980866185_2d178e88-302d-4cd5-b64f-65fdf2e37bb2.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980865977_stitch_mes_questions_en_attente_expert_dashboard_-_statistics/code_1765980866051_4ca9eabc-fec5-43ab-a853-7d0efb6cd744.html",
+            "category": "Dashboard",
+            "tags": [
+                "Stats",
+                "Charts",
+                "Analytics",
+                "Metrics"
+            ]
+        },
+        {
+            "id": "12",
+            "interface_name": "Add New Q&A",
+            "description": "Interface de création manuelle de Q&A. Comprend des champs pour la question et la réponse, une fonction de dictée vocale proéminente et des options avancées.",
+            "device_type": "Mobile",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980874743_stitch_mes_questions_en_attente_expert_add_new_q_a/screen_1765980874935_97cf4f95-c53c-435f-9246-ae31310a9792.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1765980874743_stitch_mes_questions_en_attente_expert_add_new_q_a/code_1765980874835_78bb5ce9-827e-4441-a6bc-35875541c6c5.html",
+            "category": "Content Creation",
+            "tags": [
+                "Creation",
+                "Form",
+                "Voice Input",
+                "Input"
+            ]
+        }
+    ]
+}

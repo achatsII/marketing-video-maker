@@ -1,0 +1,56 @@
+{
+    "product_name": "ExpertFlow",
+    "logo_url": "https://via.placeholder.com/150?text=LOGO",
+    "slogans": [
+        {
+            "fr": "Chaque question trouve son expert.",
+            "en": "Connecting curiosity with capability.",
+            "status": "approved"
+        },
+        {
+            "fr": "Votre entreprise a la réponse.",
+            "en": "The answer is in the room.",
+            "status": "approved"
+        },
+        {
+            "fr": "L'intelligence collective, activée.",
+            "en": "Collective genius, unlocked.",
+            "status": "approved"
+        },
+        {
+            "fr": "Le savoir ne se perd plus, il se partage.",
+            "en": "Don't lose knowledge, liberate it.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "De la parole aux actes, sans friction.",
+            "en": "Voice your question, visualize the solution.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "Une mémoire d'entreprise qui évolue avec vous.",
+            "en": "Corporate memory that never goes stale.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "L'expertise, accessible et intemporelle.",
+            "en": "Making expertise timeless and accessible.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "Plus qu'un chatbot, un relais d'experts.",
+            "en": "More than a bot, a bridge to experts.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "Capitalisez sur chaque conversation.",
+            "en": "Turn every conversation into an asset.",
+            "status": "brainstorm"
+        },
+        {
+            "fr": "La fin des questions sans réponse.",
+            "en": "No question left behind.",
+            "status": "brainstorm"
+        }
+    ]
+}

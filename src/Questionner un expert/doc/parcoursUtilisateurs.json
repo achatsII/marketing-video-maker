@@ -1,0 +1,122 @@
+{
+    "analyseProduit": {
+        "nomProduit": "KAI (Knowledge AI)",
+        "resume": "Une plateforme de gestion des connaissances intelligente. Elle permet aux employés de poser des questions à un chatbot qui puise ses réponses dans une base de savoir dynamique. Si la réponse n'existe pas, la question est routée vers le bon expert, qui peut y répondre simplement. Le système apprend et s'enrichit continuellement, tout en assurant la mise à jour des informations critiques."
+    },
+    "parcoursUtilisateurs": [
+        {
+            "role": "Collaboratrice",
+            "nomPersona": "Chloé, la Curieuse",
+            "initiale": "C",
+            "description": "Employée qui a besoin d'informations fiables et rapides pour ses tâches quotidiennes. Souvent bloquée par des questions dont la réponse est détenue par des experts difficiles à joindre.",
+            "citation": "Où puis-je trouver la dernière procédure pour les retours clients ? J'en ai besoin maintenant.",
+            "couleurTheme": "#3b82f6",
+            "etapes": [
+                {
+                    "phase": "Recherche d'Information",
+                    "action": "Pose une question au Chatbot",
+                    "details": "En tant que collaboratrice, je veux poser une question en langage naturel dans le chatbot pour obtenir une réponse immédiate sans avoir à chercher dans de multiples documents.",
+                    "pointDouleur": "Le chatbot pourrait mal interpréter une question ambiguë ou trop spécifique, fournissant une réponse non pertinente."
+                },
+                {
+                    "phase": "Obtention de Réponse",
+                    "action": "Reçoit une réponse instantanée",
+                    "details": "En tant que collaboratrice, je veux recevoir une réponse claire avec des liens vers les sources pour pouvoir valider l'information et approfondir si besoin.",
+                    "pointDouleur": "La réponse est obsolète ou le niveau de certitude est bas, créant un doute sur sa fiabilité et me faisant perdre du temps."
+                },
+                {
+                    "phase": "Escalade à un Expert",
+                    "action": "Est informée de la transmission",
+                    "details": "En tant que collaboratrice, si le bot ne sait pas, je veux être informée qu'un expert a été sollicité et que je serai notifiée dès qu'une réponse sera disponible.",
+                    "pointDouleur": "Le délai d'attente pour la réponse de l'expert est trop long, ce qui me bloque dans ma tâche actuelle."
+                },
+                {
+                    "phase": "Notification & Consultation",
+                    "action": "Reçoit la réponse de l'expert",
+                    "details": "En tant que collaboratrice, je veux recevoir une notification claire (email/in-app) avec un lien direct pour consulter la nouvelle réponse fournie par l'expert à ma question.",
+                    "pointDouleur": "La notification est manquée (noyée dans d'autres messages) ou la réponse arrive trop tard pour être encore utile."
+                },
+                {
+                    "phase": "Maintien à jour",
+                    "action": "Est notifiée d'une mise à jour",
+                    "details": "En tant que collaboratrice, je veux être notifiée si une réponse que j'ai consultée récemment a été mise à jour, pour m'assurer que je travaille toujours avec l'information la plus récente.",
+                    "pointDouleur": "Trop de notifications pour des mises à jour mineures peuvent devenir du bruit et finir par être systématiquement ignorées."
+                }
+            ]
+        },
+        {
+            "role": "Expert Métier",
+            "nomPersona": "Martin, le Sollicité",
+            "initiale": "M",
+            "description": "Possède une connaissance approfondie et critique. Constamment sollicité, il cherche à optimiser son temps en capitalisant sur ses réponses pour ne pas se répéter.",
+            "citation": "Je passe ma journée à répondre aux mêmes questions. Si seulement je pouvais le faire une bonne fois pour toutes.",
+            "couleurTheme": "#16a34a",
+            "etapes": [
+                {
+                    "phase": "Sollicitation",
+                    "action": "Reçoit une notification de question",
+                    "details": "En tant qu'expert, je veux recevoir une notification concise (email/SMS) avec un lien direct sur mon mobile pour prendre connaissance d'une question relevant de mon expertise.",
+                    "pointDouleur": "Recevoir trop de notifications pour des questions qui ne sont pas (ou plus) de mon ressort."
+                },
+                {
+                    "phase": "Contribution",
+                    "action": "Répond rapidement à la question",
+                    "details": "En tant qu'expert, je veux pouvoir répondre à une question en quelques secondes, en dictant ma réponse avec mon téléphone entre deux réunions, sans interface complexe.",
+                    "pointDouleur": "L'interface de réponse est lente ou compliquée sur mobile (trop de champs obligatoires), ce qui décourage la contribution."
+                },
+                {
+                    "phase": "Contribution Proactive",
+                    "action": "Ajoute une connaissance manuellement",
+                    "details": "En tant qu'expert, je veux pouvoir ajouter proactivement un couple Q&A que l'on me pose souvent pour anticiper les futurs besoins et réduire les interruptions.",
+                    "pointDouleur": "Le processus pour ajouter une nouvelle connaissance est trop long et formel, cela semble être plus de travail que de simplement répondre par email."
+                },
+                {
+                    "phase": "Maintenance",
+                    "action": "Valide la pertinence d'une ancienne réponse",
+                    "details": "En tant qu'expert, je veux être notifié quand une de mes réponses est fréquemment utilisée, pour pouvoir confirmer en un clic si elle est toujours d'actualité ou la mettre à jour.",
+                    "pointDouleur": "Oublier la date d'expiration d'une information critique qui devient obsolète et induit des utilisateurs en erreur."
+                },
+                {
+                    "phase": "Valorisation",
+                    "action": "Consulte son tableau de bord",
+                    "details": "En tant qu'expert, je veux voir des statistiques simples sur l'utilisation de mes contributions pour mesurer l'impact de mon partage de connaissances et valoriser ce temps.",
+                    "pointDouleur": "Les statistiques sont perçues comme un outil de 'flicage' de la performance plutôt que comme un outil de valorisation."
+                }
+            ]
+        },
+        {
+            "role": "Administrateur",
+            "nomPersona": "Alex, le Stratège",
+            "initiale": "A",
+            "description": "Responsable du succès de la plateforme (Knowledge Manager, RH). Son objectif est de s'assurer que la base de connaissance est riche, à jour et que l'adoption est maximale.",
+            "citation": "Comment puis-je m'assurer que cet outil est utilisé et que l'information y est fiable pour capitaliser sur le savoir de nos équipes ?",
+            "couleurTheme": "#c026d3",
+            "etapes": [
+                {
+                    "phase": "Configuration Initiale",
+                    "action": "Définit les experts et les catégories",
+                    "details": "En tant qu'administrateur, je veux créer et configurer facilement les profils des experts et les familles de tags (par département, projet) pour structurer la connaissance.",
+                    "pointDouleur": "La structure des tags est mal pensée au départ et devient un chaos inmaintenable au fil du temps."
+                },
+                {
+                    "phase": "Monitoring",
+                    "action": "Analyse le tableau de bord global",
+                    "details": "En tant qu'administrateur, je veux consulter un dashboard pour suivre les KPIs clés : taux de réponse du bot, temps de réponse moyen des experts, sujets les plus demandés.",
+                    "pointDouleur": "Les données sont difficiles à interpréter et ne permettent pas d'identifier des actions concrètes d'amélioration."
+                },
+                {
+                    "phase": "Optimisation",
+                    "action": "Identifie les lacunes de connaissance",
+                    "details": "En tant qu'administrateur, je veux un rapport sur les questions qui restent sans réponse ou les sujets pour lesquels aucun expert n'est identifié afin d'agir.",
+                    "pointDouleur": "Le système ne met pas en évidence les 'trous' dans la connaissance, qui restent invisibles jusqu'à ce qu'un problème survienne."
+                },
+                {
+                    "phase": "Gestion du Cycle de Vie",
+                    "action": "Gère le départ d'un expert",
+                    "details": "En tant qu'administrateur, lorsqu'un expert quitte l'entreprise, je veux un processus simple pour désactiver son compte et réattribuer ses connaissances à un remplaçant.",
+                    "pointDouleur": "La transition est complexe, des connaissances 'orphelines' se créent et des questions en attente restent bloquées."
+                }
+            ]
+        }
+    ]
+}

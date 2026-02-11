@@ -1,0 +1,52 @@
+{
+    "product_name": "Loto-AI",
+    "current_date": "Octobre 2023",
+    "tagline": "L'accélérateur de conformité LOTO : De l'investigation terrain à la validation réglementaire en temps record.",
+    "executive_summary": "Loto-AI automatise la création et la mise en conformité des fiches de cadenassage. En couplant une collecte terrain mobile à une analyse normative par IA, la solution libère vos experts techniques des tâches administratives tout en blindant juridiquement vos opérations contre les risques RSST et CSA Z460.",
+    "market_context": {
+        "context_summary": "L'industrie manufacturière fait face à un paradoxe critique : la conformité sécurité exige une documentation exhaustive, mais sa production manuelle siphonne la productivité des équipes techniques qualifiées.",
+        "key_challenges": [
+            {
+                "challenge": "Inefficience opérationnelle (Fardeau Administratif)",
+                "impact": "Coûts Opex gonflés et immobilisation des ingénieurs fiabilité sur de la mise en page plutôt que sur la maintenance préventive."
+            },
+            {
+                "challenge": "Risque de non-conformité (CSA Z460 / RSST)",
+                "impact": "Exposition directe aux sanctions pénales (CNESST) et responsabilité légale des dirigeants en cas d'accident dû à une procédure ambiguë."
+            },
+            {
+                "challenge": "Discontinuité des données (Terrain vs Bureau)",
+                "impact": "Perte d'intégrité de l'information, erreurs de transcription et impossibilité de prouver la diligence raisonnable (Traçabilité)."
+            }
+        ]
+    },
+    "solution_overview": {
+        "description": "Une plateforme de conformité intelligente 'Offline-First' qui orchestre le processus de cadenassage de bout en bout. L'application mobile capture les preuves terrain, et le cockpit web utilise l'IA pour générer, annoter et valider les procédures selon les normes en vigueur, agissant comme un auditeur automatisé avant toute signature humaine.",
+        "unique_value_prop": "Technologie 'Gatekeeper Normatif' qui refuse la soumission de fiches non-conformes et architecture découplée assurant une opérabilité totale en zone blanche (sans réseau)."
+    },
+    "business_benefits": [
+        {
+            "quantified_metric": "-60%",
+            "benefit_label": "Réduction du temps de rédaction administrative par procédure"
+        },
+        {
+            "quantified_metric": "+40%",
+            "benefit_label": "Augmentation du temps-homme disponible pour la maintenance préventive"
+        },
+        {
+            "quantified_metric": ">95%",
+            "benefit_label": "Taux de conformité normative avant validation humaine (Gatekeeper AI)"
+        },
+        {
+            "quantified_metric": "x3",
+            "benefit_label": "Accélération du cycle de mise en conformité (Time-to-Safety)"
+        }
+    ],
+    "strategic_alignment": [
+        "Conformité Réglementaire et Gestion des Risques (ESG)",
+        "Optimisation de la Main-d'œuvre Qualifiée (Pénurie de talents)",
+        "Digitalisation des Opérations (Industrie 4.0 / Zéro Papier)",
+        "Standardisation des Processus Sécurité Multi-sites"
+    ],
+    "call_to_action": "Lancer un déploiement pilote sur une ligne de production critique (50 équipements) pour valider le ROI sous 30 jours."
+}

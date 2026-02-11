@@ -1,0 +1,40 @@
+{
+    "executive_summary": "La gestion traditionnelle du cadenassage souffre d'un déséquilibre critique entre la lourdeur administrative de la rédaction manuelle et l'exigence absolue de conformité réglementaire (RSST, CSA Z460). Les industriels font face à un processus fragmenté et sujet à l'erreur humaine, où la perte de temps technique et les risques de sécurité juridique et physique menacent la continuité des opérations.",
+    "market_problems": [
+        {
+            "title": "Inefficacité opérationnelle de la rédaction manuelle",
+            "severity": "Majeure",
+            "context": "Départements de maintenance et ingénieurs fiabilité devant rédiger ou mettre à jour des centaines de procédures pour le parc machine.",
+            "description": "La rédaction d'une fiche de cadenassage est une corvée administrative répétitive et chronophage. Les experts techniques qualifiés gaspillent des heures précieuses à faire de la mise en page et de la rédaction textuelle au lieu de se concentrer sur la maintenance préventive ou corrective.",
+            "negative_impact": "Coûts opérationnels élevés, retard dans la mise à jour des procédures (backlog), et immobilisation inutile des techniciens sur des tâches à faible valeur ajoutée."
+        },
+        {
+            "title": "Risque critique de non-conformité réglementaire",
+            "severity": "Critique",
+            "context": "Responsables Santé & Sécurité (EHS) et Auditeurs garantissant le respect des normes (CSA Z460, RSST).",
+            "description": "La dépendance exclusive au jugement humain pour identifier les énergies et appliquer les normes entraîne des incohérences. Le risque d'oubli d'une source d'énergie ou d'une mention légale obligatoire (ex: Arc Flash) est élevé, rendant la fiche non conforme dès sa création.",
+            "negative_impact": "Exposition critique aux sanctions pénales et administratives (CNESST), risque d'accidents graves, et responsabilité légale de l'employeur engagée."
+        },
+        {
+            "title": "Discontinuité et friction de la collecte terrain",
+            "severity": "Majeure",
+            "context": "Techniciens intervenant dans des zones industrielles complexes (sous-sols, salles mécaniques) souvent sans couverture réseau.",
+            "description": "La rupture entre la collecte d'informations sur le terrain (papier, photos éparses) et la saisie au bureau crée une friction majeure. Les notes manuscrites sont perdues, mal transcrites ou manquent de contexte une fois le technicien revenu devant son ordinateur.",
+            "negative_impact": "Perte de données, erreurs de transcription (double saisie), allers-retours inutiles sur le site, et frustration des équipes terrain."
+        },
+        {
+            "title": "Ambiguïté visuelle et risques d'interprétation",
+            "severity": "Critique",
+            "context": "Travailleurs exécutant le cadenassage sous pression ou dans des conditions difficiles.",
+            "description": "Les procédures textuelles ou mal illustrées laissent place à l'interprétation. L'absence de lien visuel explicite entre une instruction écrite et le composant physique précis (vanne, disjoncteur) crée une ambiguïté dangereuse.",
+            "negative_impact": "Erreur d'identification du point de coupure, menant à une isolation énergétique incomplète et potentiellement à des accidents mortels ou blessures graves."
+        },
+        {
+            "title": "Déficit de traçabilité et de gouvernance",
+            "severity": "Majeure",
+            "context": "Gestionnaires de site et Auditeurs lors d'inspections post-accident ou de vérifications de routine.",
+            "description": "L'absence de processus formel et traçable de validation rend impossible la preuve de la diligence raisonnable. Il est difficile de savoir qui a modifié quoi, quelle version est active, et si l'expert a réellement validé la procédure avant sa diffusion.",
+            "negative_impact": "Incapacité à prouver la conformité en cas d'enquête, confusion sur le plancher avec des versions obsolètes, et manque de reddition de comptes."
+        }
+    ]
+}

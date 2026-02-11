@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<!-- saved from url=(0220)https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html -->
+<html class="light" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LOTO Editor Cockpit - Pro View</title>
+<script src="./LOTO Editor Cockpit - Pro View_files/saved_resource"></script>
+<link href="./LOTO Editor Cockpit - Pro View_files/css2" rel="stylesheet">
+<link href="./LOTO Editor Cockpit - Pro View_files/css2(1)" rel="stylesheet">
+<link href="./LOTO Editor Cockpit - Pro View_files/css2(2)" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#fbfdff",
+                        "glass-white": "rgba(255, 255, 255, 0.40)",
+                        "glass-border": "rgba(255, 255, 255, 0.5)",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"],
+                        "signature": ["Dancing Script"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2.25rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body { 
+                @apply font-display text-slate-700;
+                font-size: 15px; 
+                line-height: 1.6;
+            }
+        }
+        .glass-card {
+            @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-[0_4px_24px_0_rgba(31,38,135,0.03)] ring-1 ring-inset ring-white/10;
+        }
+        .input-field {
+            @apply bg-white/50 border-slate-200 border rounded-xl py-3.5 px-5 text-[15px] transition-all focus:ring-4 focus:ring-primary/5 focus:border-primary/40 focus:bg-white hover:border-slate-300 font-medium placeholder:text-slate-400;
+        }
+        .table-input {
+            @apply w-full bg-transparent border-2 border-transparent rounded-lg px-2 py-2.5 text-[15px] focus:border-primary/20 focus:bg-white/70 hover:border-slate-200/50 transition-all focus:ring-0 leading-relaxed;
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(203, 213, 225, 0.3); border-radius: 10px; }
+        .ambient-bg {
+            background: 
+                radial-gradient(at 0% 0%, rgba(19, 127, 236, 0.04) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(245, 158, 11, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.03) 0px, transparent 50%),
+                white;
+        }
+        .signature-pad {
+            background-color: #fcfdfe;
+            background-image: radial-gradient(#e2e8f0 0.8px, transparent 0.8px);
+            background-size: 12px 12px;
+            @apply border-slate-200 shadow-[inset_0_2px_8px_rgba(0,0,0,0.02)];
+        }
+        .nav-link {
+            @apply pb-5 text-[12px] font-bold text-slate-400 hover:text-primary border-b-2 border-transparent hover:border-primary/20 flex items-center gap-2.5 transition-all tracking-[0.05em] uppercase;
+        }
+        .nav-link-active {
+            @apply pb-5 text-[12px] font-bold border-b-2 border-primary text-primary flex items-center gap-2.5 transition-all tracking-[0.05em] uppercase;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}
+            body{font-family:Inter;--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1));
+                font-size: 15px; 
+                line-height: 1.6}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-0{bottom:0px}.left-4{left:1rem}.top-0{top:0px}.top-4{top:1rem}.top-\[73px\]{top:73px}.z-40{z-index:40}.z-50{z-index:50}.z-\[100\]{z-index:100}.mb-1\.5{margin-bottom:0.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-auto{margin-top:auto}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.size-10{width:2.5rem;height:2.5rem}.size-11{width:2.75rem;height:2.75rem}.size-16{width:4rem;height:4rem}.size-2{width:0.5rem;height:0.5rem}.size-8{width:2rem;height:2rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-20{height:5rem}.h-6{height:1.5rem}.h-\[calc\(100vh-73px-40px\)\]{height:calc(100vh - 73px - 40px)}.min-h-\[140px\]{min-height:140px}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-20{width:5rem}.w-64{width:16rem}.w-\[380px\]{width:380px}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-rotate-1{--tw-rotate:-1deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.cursor-zoom-in{cursor:zoom-in}.select-none{-webkit-user-select:none;user-select:none}.resize-none{resize:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-16 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100\/50 > :not([hidden]) ~ :not([hidden]){border-color:rgb(241 245 249 / 0.5)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1.5rem}.rounded-3xl{border-radius:2.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:1rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-none{border-style:none}.border-amber-100\/50{border-color:rgb(254 243 199 / 0.5)}.border-primary\/10{border-color:rgb(19 127 236 / 0.1)}.border-primary\/20{border-color:rgb(19 127 236 / 0.2)}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/30{border-color:rgb(226 232 240 / 0.3)}.border-slate-200\/40{border-color:rgb(226 232 240 / 0.4)}.border-slate-200\/50{border-color:rgb(226 232 240 / 0.5)}.border-slate-200\/60{border-color:rgb(226 232 240 / 0.6)}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-white\/50{border-color:rgb(255 255 255 / 0.5)}.border-white\/60{border-color:rgb(255 255 255 / 0.6)}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-background-light\/40{background-color:rgb(251 253 255 / 0.4)}.bg-black\/0{background-color:rgb(0 0 0 / 0)}.bg-blue-50\/30{background-color:rgb(239 246 255 / 0.3)}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-primary{--tw-bg-opacity:1;background-color:rgb(19 127 236 / var(--tw-bg-opacity, 1))}.bg-primary\/0{background-color:rgb(19 127 236 / 0)}.bg-primary\/5{background-color:rgb(19 127 236 / 0.05)}.bg-primary\/90{background-color:rgb(19 127 236 / 0.9)}.bg-red-50\/30{background-color:rgb(254 242 242 / 0.3)}.bg-slate-200\/50{background-color:rgb(226 232 240 / 0.5)}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-50\/30{background-color:rgb(248 250 252 / 0.3)}.bg-transparent{background-color:transparent}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/30{background-color:rgb(255 255 255 / 0.3)}.bg-white\/40{background-color:rgb(255 255 255 / 0.4)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/60{background-color:rgb(255 255 255 / 0.6)}.bg-white\/70{background-color:rgb(255 255 255 / 0.7)}.bg-white\/80{background-color:rgb(255 255 255 / 0.8)}.bg-cover{background-size:cover}.bg-center{background-position:center}.bg-no-repeat{background-repeat:no-repeat}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-12{padding:3rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-12{padding-left:3rem;padding-right:3rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-5{padding-bottom:1.25rem}.pl-10{padding-left:2.5rem}.pr-10{padding-right:2.5rem}.pr-4{padding-right:1rem}.pt-0{padding-top:0px}.pt-10{padding-top:2.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-signature{font-family:Dancing Script}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-\[14px\]{font-size:14px}.text-\[18px\]{font-size:18px}.text-\[20px\]{font-size:20px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-\[0\.15em\]{letter-spacing:0.15em}.tracking-\[0\.1em\]{letter-spacing:0.1em}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-600\/80{color:rgb(217 119 6 / 0.8)}.text-blue-600\/70{color:rgb(37 99 235 / 0.7)}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(19 127 236 / var(--tw-text-opacity, 1))}.text-primary\/40{color:rgb(19 127 236 / 0.4)}.text-primary\/50{color:rgb(19 127 236 / 0.5)}.text-primary\/60{color:rgb(19 127 236 / 0.6)}.text-primary\/70{color:rgb(19 127 236 / 0.7)}.text-primary\/80{color:rgb(19 127 236 / 0.8)}.text-red-600\/70{color:rgb(220 38 38 / 0.7)}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-800\/90{color:rgb(30 41 59 / 0.9)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-60{opacity:0.6}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-primary\/10{--tw-shadow-color:rgb(19 127 236 / 0.1);--tw-shadow:var(--tw-shadow-colored)}.shadow-primary\/15{--tw-shadow-color:rgb(19 127 236 / 0.15);--tw-shadow:var(--tw-shadow-colored)}.shadow-primary\/20{--tw-shadow-color:rgb(19 127 236 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+        .glass-card{border-width:1px;border-color:rgb(255 255 255 / 0.6);background-color:rgb(255 255 255 / 0.4);--tw-shadow:0 4px 24px 0 rgba(31,38,135,0.03);--tw-shadow-colored:0 4px 24px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);--tw-ring-inset:inset;--tw-ring-color:rgb(255 255 255 / 0.1);--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}
+        .input-field{border-radius:1rem;border-width:1px;--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1));background-color:rgb(255 255 255 / 0.5);padding-top:0.875rem;padding-bottom:0.875rem;padding-left:1.25rem;padding-right:1.25rem;font-size:15px;font-weight:500;transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+        .input-field::placeholder{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}
+        .input-field:hover{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}
+        .input-field:focus{border-color:rgb(19 127 236 / 0.4);--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1));--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);--tw-ring-color:rgb(19 127 236 / 0.05)}
+        .table-input{width:100%;border-radius:0.5rem;border-width:2px;border-color:transparent;background-color:transparent;padding-left:0.5rem;padding-right:0.5rem;padding-top:0.625rem;padding-bottom:0.625rem;font-size:15px;line-height:1.625;transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+        .table-input:hover{border-color:rgb(226 232 240 / 0.5)}
+        .table-input:focus{border-color:rgb(19 127 236 / 0.2);background-color:rgb(255 255 255 / 0.7);--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(203, 213, 225, 0.3); border-radius: 10px; }
+        .ambient-bg {
+            background: 
+                radial-gradient(at 0% 0%, rgba(19, 127, 236, 0.04) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(245, 158, 11, 0.03) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.03) 0px, transparent 50%),
+                white;
+        }
+        .signature-pad {
+            background-color: #fcfdfe;
+            background-image: radial-gradient(#e2e8f0 0.8px, transparent 0.8px);
+            background-size: 12px 12px;
+            --tw-border-opacity:1;
+            border-color:rgb(226 232 240 / var(--tw-border-opacity, 1));
+            --tw-shadow:inset 0 2px 8px rgba(0,0,0,0.02);
+            --tw-shadow-colored:inset 0 2px 8px var(--tw-shadow-color);
+            box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        }
+        .nav-link{display:flex;align-items:center;gap:0.625rem;border-bottom-width:2px;border-color:transparent;padding-bottom:1.25rem;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1));transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+        .nav-link:hover{border-color:rgb(19 127 236 / 0.2);--tw-text-opacity:1;color:rgb(19 127 236 / var(--tw-text-opacity, 1))}
+        .nav-link-active{display:flex;align-items:center;gap:0.625rem;border-bottom-width:2px;--tw-border-opacity:1;border-color:rgb(19 127 236 / var(--tw-border-opacity, 1));padding-bottom:1.25rem;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;--tw-text-opacity:1;color:rgb(19 127 236 / var(--tw-text-opacity, 1));transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}
+        .selection\:bg-primary\/10 *::selection{background-color:rgb(19 127 236 / 0.1)}
+        .selection\:bg-primary\/10::selection{background-color:rgb(19 127 236 / 0.1)}
+        .placeholder\:text-slate-400::placeholder{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}
+        .focus-within\:border-primary\/30:focus-within{border-color:rgb(19 127 236 / 0.3)}
+        .focus-within\:ring-4:focus-within{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        .focus-within\:ring-primary\/5:focus-within{--tw-ring-color:rgb(19 127 236 / 0.05)}
+        .hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        .hover\:border-primary\/20:hover{border-color:rgb(19 127 236 / 0.2)}
+        .hover\:border-primary\/30:hover{border-color:rgb(19 127 236 / 0.3)}
+        .hover\:bg-blue-600:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-primary:hover{--tw-bg-opacity:1;background-color:rgb(19 127 236 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-primary\/10:hover{background-color:rgb(19 127 236 / 0.1)}
+        .hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}
+        .hover\:bg-white\/40:hover{background-color:rgb(255 255 255 / 0.4)}
+        .hover\:bg-white\/50:hover{background-color:rgb(255 255 255 / 0.5)}
+        .hover\:bg-white\/80:hover{background-color:rgb(255 255 255 / 0.8)}
+        .hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(19 127 236 / var(--tw-text-opacity, 1))}
+        .hover\:text-primary\/60:hover{color:rgb(19 127 236 / 0.6)}
+        .hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}
+        .focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}
+        .active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
+        .group:hover .group-hover\:bg-black\/5{background-color:rgb(0 0 0 / 0.05)}
+        .group:hover .group-hover\:bg-primary\/\[0\.01\]{background-color:rgb(19 127 236 / 0.01)}
+        .group:hover .group-hover\:text-primary\/40{color:rgb(19 127 236 / 0.4)}
+        @media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}
+        @media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}
+        @media (min-width: 1280px){.xl\:flex{display:flex}}
+    </style></head>
+<body class="ambient-bg antialiased selection:bg-primary/10 min-h-screen overflow-y-auto">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 flex items-center justify-between border-b border-white/50 bg-white/60 backdrop-blur-xl px-8 py-4 shrink-0 z-[100]">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="size-11 bg-primary/90 shadow-lg shadow-primary/20 rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<div>
+<h2 class="text-[10px] font-bold leading-none tracking-[0.15em] text-slate-400 uppercase mb-1.5">LOTO-AI Cockpit</h2>
+<div class="flex items-center gap-3">
+<span class="text-base font-semibold text-slate-800 tracking-tight">P-402 Centrifugal Pump</span>
+<span class="px-2.5 py-0.5 rounded-md bg-amber-50/50 text-amber-600/80 text-[10px] font-bold uppercase tracking-widest border border-amber-100/50">Draft</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-5">
+<div class="hidden md:flex items-center bg-white/40 border border-slate-200/50 rounded-full px-4 py-1.5 gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-xs text-green-500 font-bold">sync</span>
+<span class="text-[11px] font-semibold text-slate-500">Live Sync</span>
+</div>
+<div class="h-6 w-px bg-slate-200/50"></div>
+<button class="flex items-center justify-center rounded-xl h-10 px-6 bg-white/80 border border-slate-200 text-slate-600 text-[13px] font-semibold hover:bg-white transition-all shadow-sm active:scale-95">
+                Save Draft
+            </button>
+<button class="flex items-center justify-center rounded-xl h-10 px-6 bg-primary text-white text-[13px] font-semibold hover:bg-blue-600 transition-all shadow-md shadow-primary/15 active:scale-95">
+                Publish
+            </button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-white shadow-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAkXGFz8dQjVkuCNEE3mp8ufTDAElsYEqE_K4kDkq7bbF8OlIXMKbDwuEzFmJnMlAP9HyC84CyJtV0iI-HAHU5gG8pjuzyjGrze8wdQa1MkWCPbpJfaNQc_6JUyxG3dmd7eV60W6j0HcnHjpLSBX9ePlbiYYMx2VriBQyUquFtmDEl3ngrV9sAMORFOVLdQuQwbNYX4Jl8JkuJ-vAZ6t5gDEQJ_tpp-aeR6uBX9eov6hmaGC1l2LqMMl4yBHM7FSzAKWU0SG5mTWQU&quot;);"></div>
+</div>
+</header>
+<main class="flex flex-1">
+<aside class="w-[380px] hidden xl:flex flex-col border-r border-slate-200/40 bg-white/5 sticky top-[73px] h-[calc(100vh-73px-40px)]">
+<div class="p-8 pb-5 flex justify-between items-center">
+<h3 class="font-bold text-[11px] uppercase tracking-[0.15em] text-slate-400">AI Investigation</h3>
+<button class="text-primary/50 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-base">refresh</span>
+</button>
+</div>
+<div class="flex-1 overflow-y-auto p-6 pt-0 space-y-5 custom-scrollbar">
+<div class="glass-card rounded-2xl p-4 group cursor-pointer hover:bg-white/80 transition-all border-white/60">
+<div class="flex gap-4">
+<div class="w-20 h-20 shrink-0 bg-center bg-cover rounded-xl border border-white shadow-sm" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDwDQNPqzMHq4GUGpImInOcLPc0RCNvERyD2YPeP15qDWVsYDzQZDiG_JHby_qn9Hfr9DtULlwd4sKgbnEuk0fr1ZDUsfESqNwbhRdIjdpkl4d78dUhmoB9oPnO2oeper9F0cu10vpWCfbx98CSV3ljhLPVPhn-KLRb5zc1KEKnPGZxDz_l9pxWJBJs8jlTwdLgFrX9baBOve8uRMvS6SAvx3aAF4eAveeGEchbJeGOrFOGikW1rGv2wG-TulWY5F1pZ6RfNtFRj_c&quot;);"></div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<p class="text-[13px] font-semibold text-slate-800">Main Isolation Valve</p>
+<p class="text-[12px] text-slate-500 mt-1.5 leading-relaxed line-clamp-2">V-102 tag detected. Locked state confirmed.</p>
+</div>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">10:45 AM</p>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-2xl p-4 group cursor-pointer hover:bg-white/80 transition-all border-white/60">
+<div class="flex gap-4">
+<div class="w-10 h-10 shrink-0 bg-primary/5 rounded-xl flex items-center justify-center text-primary/60">
+<span class="material-symbols-outlined text-xl">mic</span>
+</div>
+<div class="flex-1">
+<p class="text-[13px] font-semibold text-slate-800">Panel 4-B Audio</p>
+<p class="text-[12px] text-slate-500 italic mt-1.5 leading-relaxed">"...13.8kV de-energized..."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto border-t border-slate-200/30 bg-white/30 backdrop-blur-xl p-8">
+<div class="relative group flex items-center gap-4 bg-white/60 border border-slate-200 rounded-2xl px-3 py-1.5 shadow-sm focus-within:border-primary/30 focus-within:ring-4 focus-within:ring-primary/5 transition-all">
+<button class="shrink-0 p-1 text-primary/40 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<input class="w-full bg-transparent border-none focus:ring-0 py-2.5 text-[14px] font-medium text-slate-700 placeholder:text-slate-400" placeholder="Ask AI..." type="text">
+<button class="shrink-0 size-8 bg-primary text-white rounded-full shadow-md shadow-primary/20 hover:scale-105 active:scale-95 transition-all flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</aside>
+<section class="flex-1 flex flex-col min-w-0">
+<div class="px-12 pt-10 space-y-8">
+<div class="flex bg-white/40 backdrop-blur-xl p-1.5 rounded-2xl w-fit border border-slate-200/50 shadow-sm">
+<button class="px-8 py-3 text-[12px] font-bold rounded-xl bg-primary text-white shadow-lg shadow-primary/10 flex items-center gap-2.5 transition-all">
+<span class="material-symbols-outlined text-[20px]">edit_note</span> Structured Editor
+                    </button>
+<button class="px-8 py-3 text-[12px] font-bold text-slate-400 rounded-xl hover:bg-white/50 flex items-center gap-2.5 transition-all">
+<span class="material-symbols-outlined text-[20px]">visibility</span> Preview
+                    </button>
+</div>
+<nav class="flex items-center gap-10 border-b border-slate-200/30 sticky top-[73px] bg-background-light/40 backdrop-blur-md z-40">
+<a class="nav-link-active" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#cadenassage">
+<span class="material-symbols-outlined text-[18px]">lock</span> Cadenassage
+                    </a>
+<a class="nav-link" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#decadenassage">
+<span class="material-symbols-outlined text-[18px]">lock_open</span> Décadenassage
+                    </a>
+<a class="nav-link" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#details">
+<span class="material-symbols-outlined text-[18px]">description</span> Details
+                    </a>
+<a class="nav-link" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#images">
+<span class="material-symbols-outlined text-[18px]">image</span> Annotated Images
+                    </a>
+<a class="nav-link" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#signatures">
+<span class="material-symbols-outlined text-[18px]">draw</span> Signatures
+                    </a>
+</nav>
+</div>
+<div class="flex-1 p-12 pt-8 space-y-16">
+<div class="glass-card rounded-3xl overflow-hidden flex flex-col" id="cadenassage">
+<div class="px-10 py-6 border-b border-slate-200/40 bg-white/20 flex justify-between items-center">
+<h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400">Cadenassage (Lockout)</h4>
+<button class="bg-primary/5 text-primary p-2.5 rounded-xl hover:bg-primary/10 transition-all border border-primary/10">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead class="bg-slate-50/30 border-b border-slate-200/40">
+<tr>
+<th class="pl-10 pr-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">No Etape</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Ref Photo</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Instruction</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Type Energy</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Mecanism</th>
+<th class="pr-10 py-5"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100/50">
+<tr class="hover:bg-white/40 transition-colors group">
+<td class="pl-10 pr-4 py-8 text-lg font-bold text-primary/80">10</td>
+<td class="px-4 py-8">
+<div class="size-16 bg-white/60 rounded-xl border-2 border-slate-200/60 flex items-center justify-center text-slate-300 shadow-sm hover:border-primary/30 hover:bg-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-3xl">add_a_photo</span>
+</div>
+</td>
+<td class="px-4 py-8">
+<textarea class="table-input resize-none h-20" placeholder="Saisir l&#39;instruction...">Isoler l'interrupteur principal au panneau 4-B.</textarea>
+</td>
+<td class="px-4 py-8">
+<select class="table-input font-bold text-red-600/70 bg-red-50/30">
+<option selected="">ÉLECTRIQUE</option>
+<option>HYDRAULIQUE</option>
+<option>MÉCANIQUE</option>
+</select>
+</td>
+<td class="px-4 py-8">
+<input class="table-input font-semibold text-slate-700" type="text" value="Disjoncteur GE Evolution">
+</td>
+<td class="pr-10 py-8 text-right">
+<button class="p-2 text-slate-200 group-hover:text-primary/40 transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-white/40 transition-colors group">
+<td class="pl-10 pr-4 py-8 text-lg font-bold text-primary/80">20</td>
+<td class="px-4 py-8">
+<div class="size-16 bg-white/60 rounded-xl border-2 border-slate-200/60 flex items-center justify-center text-slate-300 shadow-sm hover:border-primary/30 hover:bg-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-3xl">add_a_photo</span>
+</div>
+</td>
+<td class="px-4 py-8">
+<textarea class="table-input resize-none h-20" placeholder="Saisir l&#39;instruction...">Fermer la vanne d'aspiration V-102.</textarea>
+</td>
+<td class="px-4 py-8">
+<select class="table-input font-bold text-blue-600/70 bg-blue-50/30">
+<option>ÉLECTRIQUE</option>
+<option selected="">HYDRAULIQUE</option>
+<option>MÉCANIQUE</option>
+</select>
+</td>
+<td class="px-4 py-8">
+<input class="table-input font-semibold text-slate-700" type="text" value="Vanne à guillotine">
+</td>
+<td class="pr-10 py-8 text-right">
+<button class="p-2 text-slate-200 group-hover:text-primary/40 transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="glass-card rounded-3xl overflow-hidden flex flex-col" id="decadenassage">
+<div class="px-10 py-6 border-b border-slate-200/40 bg-white/20 flex justify-between items-center">
+<h4 class="text-[11px] font-bold uppercase tracking-[0.15em] text-slate-400">Décadenassage (Unlockout)</h4>
+<button class="text-primary/70 text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 px-5 py-2.5 bg-primary/5 rounded-xl border border-primary/10 hover:bg-primary/10 transition-all">
+<span class="material-symbols-outlined text-sm">auto_fix</span> Generate from Lockout
+                        </button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-slate-50/30 border-b border-slate-200/40">
+<tr>
+<th class="pl-10 pr-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">No Etape</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Ref Photo</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Instruction</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Type Energy</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Mecanism</th>
+<th class="pr-10 py-5"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100/50">
+<tr class="hover:bg-white/40 transition-colors group">
+<td class="pl-10 pr-4 py-8 text-lg font-bold text-primary/80">10</td>
+<td class="px-4 py-8">
+<div class="size-16 bg-white/60 rounded-xl border-2 border-slate-200/60 flex items-center justify-center text-slate-300 shadow-sm hover:border-primary/30 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-3xl">add_a_photo</span>
+</div>
+</td>
+<td class="px-4 py-8">
+<textarea class="table-input resize-none h-20">Retirer le cadenas et réenclencher le disjoncteur.</textarea>
+</td>
+<td class="px-4 py-8">
+<select class="table-input font-bold text-red-600/70 bg-red-50/30">
+<option selected="">ÉLECTRIQUE</option>
+<option>HYDRAULIQUE</option>
+</select>
+</td>
+<td class="px-4 py-8">
+<input class="table-input font-semibold text-slate-700" type="text" value="Disjoncteur GE Evolution">
+</td>
+<td class="pr-10 py-8 text-right">
+<button class="p-2 text-slate-200 group-hover:text-primary/40 transition-colors">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="glass-card rounded-3xl p-12 border-white/60" id="details">
+<h4 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-10 flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary/40">analytics</span> Details
+                    </h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2.5">
+<label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Location</label>
+<input class="w-full input-field" type="text" value="Zone B - North Wing">
+</div>
+<div class="space-y-2.5">
+<label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Maximo #</label>
+<input class="w-full input-field" type="text" value="WO-94421-2024">
+</div>
+</div>
+<div class="space-y-2.5">
+<label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">Description</label>
+<textarea class="w-full input-field min-h-[140px] leading-relaxed" placeholder="Detailed scope of work...">Consignation complète de la pompe P-402 pour remplacement des joints d'étanchéité mécaniques.</textarea>
+</div>
+</div>
+<div class="space-y-8">
+<div class="space-y-2.5">
+<label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">No | Information Supplémentaires</label>
+<input class="w-full input-field" type="text" value="PROC-SAFE-102-B">
+</div>
+<div class="space-y-2.5">
+<label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1">No | Fiches Supplémentaires</label>
+<input class="w-full input-field" type="text" value="SD-402-HYD, ELEC-V402">
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-3xl p-12 border-white/60" id="images">
+<h4 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-10 flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary/40">collections</span> Annotated Images
+                    </h4>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<div class="aspect-square bg-white/30 rounded-2xl border border-slate-200/60 overflow-hidden relative group cursor-zoom-in shadow-sm">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDwDQNPqzMHq4GUGpImInOcLPc0RCNvERyD2YPeP15qDWVsYDzQZDiG_JHby_qn9Hfr9DtULlwd4sKgbnEuk0fr1ZDUsfESqNwbhRdIjdpkl4d78dUhmoB9oPnO2oeper9F0cu10vpWCfbx98CSV3ljhLPVPhn-KLRb5zc1KEKnPGZxDz_l9pxWJBJs8jlTwdLgFrX9baBOve8uRMvS6SAvx3aAF4eAveeGEchbJeGOrFOGikW1rGv2wG-TulWY5F1pZ6RfNtFRj_c&quot;);"></div>
+<div class="absolute top-4 left-4 bg-primary text-white text-[9px] font-bold px-2 py-1 rounded shadow-md uppercase tracking-wider">STEP 10</div>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
+</div>
+<div class="aspect-square bg-white/30 rounded-2xl border border-slate-200/60 overflow-hidden relative group cursor-zoom-in shadow-sm">
+<div class="absolute inset-0 bg-center bg-cover" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBhBDVsWxBXpw0jedGkxzV77hdW479rddJw-t1SeiJQ9sY32slX6GvgDq1EFWzsobWiJug4UpnWc5zqzsK4D7UiAuXgqDl12do8a5FIF_OLOLfNqgGwJ7M5QpFeXRTeB6aQTMzSXKcFw55bZTSlCoLDwyHI4Xaz0s39RjTiM-46xPDBwCTpB3lofrQhrnds65iGe_McBM-bVXYwFtMqJ7UukoAdDqkQy03rpZeLE0OiwjBmUYQdCczxcjDtztxrAYYd2wWmmMk8Ag4&quot;);"></div>
+<div class="absolute top-4 left-4 bg-primary text-white text-[9px] font-bold px-2 py-1 rounded shadow-md uppercase tracking-wider">STEP 20</div>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all"></div>
+</div>
+<div class="aspect-square bg-white/20 rounded-2xl border-dashed border-2 border-slate-200 flex flex-col items-center justify-center text-slate-300 hover:text-primary/60 hover:border-primary/20 hover:bg-white/40 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-4xl mb-3">add_a_photo</span>
+<span class="text-[10px] font-bold uppercase tracking-[0.15em]">Add Photo</span>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-3xl overflow-hidden border-white/60 mb-12" id="signatures">
+<div class="px-10 py-6 border-b border-slate-200/40 bg-white/20">
+<h4 class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-400 flex items-center gap-3">
+<span class="material-symbols-outlined text-lg text-primary/40">verified_user</span> Signatures &amp; Approvals
+                        </h4>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-slate-50/30 border-b border-slate-200/40">
+<tr>
+<th class="pl-10 px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Revue par</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Signature</th>
+<th class="px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Responsable/Entreprise</th>
+<th class="pr-10 px-4 py-5 text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">Date</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-100/50">
+<tr class="hover:bg-white/40 transition-colors">
+<td class="pl-10 px-4 py-10">
+<input class="table-input font-bold text-slate-800" type="text" value="Jean-Philippe Martin">
+<div class="text-[10px] font-semibold text-slate-400 uppercase tracking-widest px-2 mt-1">Safety Engineer</div>
+</td>
+<td class="px-4 py-10">
+<div class="h-20 w-64 signature-pad rounded-2xl border flex items-center justify-center px-6 hover:border-primary/30 transition-all cursor-pointer relative overflow-hidden group">
+<span class="font-signature text-4xl text-slate-800/90 pointer-events-none transform -rotate-1 select-none">Jean-Philippe Martin</span>
+<div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/[0.01] transition-colors"></div>
+</div>
+</td>
+<td class="px-4 py-10">
+<input class="table-input font-semibold text-slate-600" type="text" value="Internal Safety Ops">
+</td>
+<td class="pr-10 px-4 py-10">
+<input class="table-input font-semibold text-slate-500" type="date" value="2024-05-12">
+</td>
+</tr>
+<tr class="hover:bg-white/40 transition-colors">
+<td class="pl-10 px-4 py-10">
+<input class="table-input font-semibold text-slate-300 italic" placeholder="Assignee needed..." type="text">
+</td>
+<td class="px-4 py-10">
+<button class="text-[10px] font-bold text-primary/70 uppercase border border-primary/20 bg-primary/5 px-8 py-3 rounded-xl hover:bg-primary hover:text-white transition-all transform active:scale-95">Assign now</button>
+</td>
+<td class="px-4 py-10">
+<input class="table-input text-slate-300" placeholder="---" type="text">
+</td>
+<td class="pr-10 px-4 py-10">
+<input class="table-input text-slate-300" placeholder="---" type="text">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="h-12 sticky bottom-0 bg-white/70 backdrop-blur-xl border-t border-slate-200/40 flex items-center justify-between px-12 shrink-0 z-50">
+<div class="flex items-center gap-10 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+<span class="flex items-center gap-3">
+<span class="size-2 rounded-full bg-green-400"></span> 
+                User: Safety_Eng_02
+            </span>
+<span class="opacity-60">Auto-saved 11:04 AM</span>
+</div>
+<div class="flex items-center gap-8 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#">Compliance</a>
+<a class="hover:text-primary transition-colors" href="https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html#">Support</a>
+<span class="text-slate-300 font-mono lowercase bg-slate-50 px-2.5 py-1 rounded border border-slate-200/50">v2.4.1</span>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -6,8 +6,25 @@
  */
 
 import { Config } from "@remotion/cli/config";
-import { enableTailwind } from '@remotion/tailwind-v4';
+import { enableTailwind } from "@remotion/tailwind-v4";
+import path from "path";
 
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
-Config.overrideWebpackConfig(enableTailwind);
+Config.overrideWebpackConfig((currentConfig) => {
+  const withTailwind = enableTailwind(currentConfig);
+
+  // Force-set alias after enableTailwind to ensure @ works
+  if (!withTailwind.resolve) {
+    withTailwind.resolve = {};
+  }
+  if (!withTailwind.resolve.alias) {
+    withTailwind.resolve.alias = {};
+  }
+  (withTailwind.resolve.alias as Record<string, string>)["@"] = path.resolve(
+    process.cwd(),
+    "src"
+  );
+
+  return withTailwind;
+});

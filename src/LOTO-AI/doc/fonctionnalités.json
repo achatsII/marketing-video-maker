@@ -1,0 +1,207 @@
+{
+    "productName": "LOTO-AI",
+    "version": "1.0",
+    "lastUpdate": "2023-10-27",
+    "valueProposition": "Transformez la création de fiches de cadenassage d'une corvée manuelle en un processus intelligent, rapide et conforme.",
+    "description": "LOTO-AI est un copilote d'investigation qui assiste les techniciens et auditeurs. Une application mobile dédiée capture les preuves sur le terrain (photos, notes) même hors ligne. Ensuite, une IA génère la procédure de cadenassage complète, l'annote visuellement et l'analyse pour garantir sa conformité avec les normes de sécurité en vigueur, le tout géré via un cockpit de création collaboratif.",
+    "features": [
+        {
+            "id": "ai_procedure_generation",
+            "category": "Génération IA",
+            "title": "Génération de Procédure par IA",
+            "description": "À partir des photos et notes prises sur le terrain, l'IA rédige la procédure de cadenassage complète en se basant sur un prompt contextuel qui inclut toutes les données collectées.",
+            "type": "MUST_HAVE",
+            "priority": "PRIMARY",
+            "userValue": "Réduit drastiquement le temps de rédaction, passant de plusieurs heures à quelques minutes, en automatisant la partie la plus fastidieuse du processus."
+        },
+        {
+            "id": "mobile_data_capture",
+            "category": "Acquisition Terrain",
+            "title": "Collecte de Données Mobile",
+            "description": "Une application mobile dédiée permet de capturer des preuves multimodales (photos, notes audio/texte) directement sur le site. L'IA embarquée analyse les images en temps réel pour en extraire une description.",
+            "type": "MUST_HAVE",
+            "priority": "PRIMARY",
+            "userValue": "Permet une collecte d'informations rapide et sans friction dans des environnements industriels complexes, centralisant toutes les preuves nécessaires à la génération."
+        },
+        {
+            "id": "hybrid_editing_cockpit",
+            "category": "Édition & Création",
+            "title": "Cockpit d'Édition Hybride",
+            "description": "Une interface web en écran scindé montre les preuves à gauche et le résultat à droite, avec une vue WYSIWYG et une vue tableau pour des modifications rapides.",
+            "type": "MUST_HAVE",
+            "priority": "PRIMARY",
+            "userValue": "Offre une flexibilité maximale pour affiner la procédure, combinant la vitesse de l'IA avec le contrôle total et précis de l'expert humain."
+        },
+        {
+            "id": "versioning_and_audit_trail",
+            "category": "Gestion & Traçabilité",
+            "title": "Système de Versionning Complet",
+            "description": "Chaque modification (manuelle ou par IA) crée une nouvelle version de la fiche. Le système conserve un historique complet des changements, permettant de naviguer et de restaurer des versions antérieures.",
+            "type": "MUST_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Garantit une traçabilité totale et la conformité lors d'inspections (ex: CNESST), en prouvant qui a fait quoi et quand."
+        },
+        {
+            "id": "direct_manual_editing",
+            "category": "Édition & Création",
+            "title": "Édition Manuelle Directe",
+            "description": "Possibilité de cliquer sur n'importe quel champ de texte ou donnée dans la vue 'Tableau Structuré' pour le modifier manuellement, court-circuitant l'IA si nécessaire.",
+            "type": "MUST_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Garantit un contrôle absolu à l'utilisateur, qui peut toujours apporter des corrections fines et rapides sans dépendre de l'IA."
+        },
+        {
+            "id": "edit_metadata",
+            "category": "Édition & Création",
+            "title": "Édition des Métadonnées",
+            "description": "L'utilisateur peut modifier à tout moment les informations générales de la fiche, comme son nom, l'ID de la machine associée ou d'autres champs d'identification.",
+            "type": "MUST_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Offre la flexibilité nécessaire pour gérer et classifier correctement les fiches de cadenassage dans le système."
+        },
+        {
+            "id": "pdf_export",
+            "category": "Exports & Sorties",
+            "title": "Export PDF Haute Résolution",
+            "description": "Génération de la fiche finale en PDF haute résolution, respectant fidèlement le gabarit, pour l'impression et l'affichage terrain.",
+            "type": "MUST_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Produit le document officiel et légal, prêt à être utilisé, signé et plastifié pour l'environnement de travail."
+        },
+        {
+            "id": "security_kit_configuration",
+            "category": "Configuration",
+            "title": "Gabarit de Fiche Prédéfini",
+            "description": "Le système est pré-configuré avec un gabarit JSON (template) spécifique au client, définissant la structure immuable de la fiche de cadenassage.",
+            "type": "MUST_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Assure une standardisation parfaite de toutes les fiches produites dès le premier jour, sans aucune configuration complexe requise."
+        },
+        {
+            "id": "offline_first_mode",
+            "category": "Acquisition Terrain",
+            "title": "Mode Hors-Ligne (Offline-First)",
+            "description": "L'application mobile est conçue pour fonctionner intégralement sans connexion internet. Toutes les données capturées sont sauvegardées localement et synchronisées automatiquement dès que le réseau est disponible.",
+            "type": "SHOULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Garantit qu'aucune donnée n'est perdue et que le travail n'est jamais interrompu, même dans les zones industrielles les plus reculées sans couverture réseau."
+        },
+        {
+            "id": "compliance_analysis_gatekeeper",
+            "category": "Conformité & Sécurité",
+            "title": "Analyse de Conformité 'Gatekeeper'",
+            "description": "Un agent IA analyse la fiche générée et la compare aux normes (RSST, CSA Z460) et règles internes. Il produit un rapport d'audit avec un code couleur (Vert, Jaune, Rouge) pour identifier les non-conformités.",
+            "type": "SHOULD_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Assure que chaque procédure est conforme avant même sa soumission, minimisant les risques légaux, les accidents et les allers-retours de validation."
+        },
+        {
+            "id": "chatbot_editor",
+            "category": "Édition & Création",
+            "title": "Édition par Chatbot IA",
+            "description": "Interface de discussion pour demander des modifications structurelles ou de contenu à l'IA, qui conserve le contexte de la fiche en cours.",
+            "type": "SHOULD_HAVE",
+            "priority": "PRIMARY",
+            "userValue": "Permet de reformuler, d'ajouter ou de restructurer des sections entières de la fiche en langage naturel, accélérant les modifications complexes."
+        },
+        {
+            "id": "approval_workflow",
+            "category": "Collaboration & Workflow",
+            "title": "Workflow d'Approbation (Intégrateur/Auditeur)",
+            "description": "Un processus formel permet à un 'Intégrateur' de soumettre une fiche pour révision. Un 'Auditeur' peut alors la commenter, la rejeter ou l'approuver avec une signature numérique.",
+            "type": "SHOULD_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Structure et sécurise le processus de validation, assurant que seules les fiches vérifiées par un expert sont mises en service."
+        },
+        {
+            "id": "drag_and_match_annotation",
+            "category": "Annotation Visuelle",
+            "title": "Association Image-Étape (Drag & Match)",
+            "description": "Permet de glisser une image depuis le panneau des preuves et de la déposer sur une étape spécifique de la procédure pour les lier visuellement et contextuellement.",
+            "type": "SHOULD_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Crée un lien explicite entre une photo et une instruction, améliorant considérablement la clarté et la sécurité de la procédure."
+        },
+        {
+            "id": "user_role_management",
+            "category": "Gestion des Utilisateurs",
+            "title": "Gestion des Utilisateurs et des Rôles",
+            "description": "Interfaces d'administration pour créer/modifier/supprimer les comptes et attribuer des rôles prédéfinis (Intégrateur, Auditeur, Admin).",
+            "type": "SHOULD_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Assure que chaque utilisateur n'a accès qu'aux fonctionnalités pertinentes pour sa fonction, respectant la ségrégation des tâches."
+        },
+        {
+            "id": "pre_submission_checklist",
+            "category": "Conformité & Sécurité",
+            "title": "Checklist de Pré-soumission",
+            "description": "Une fenêtre popup apparaît avant la soumission, forçant l'utilisateur à cocher manuellement une liste de vérifications (ex: 'Avez-vous vérifié l'accessibilité ?').",
+            "type": "SHOULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Ajoute une dernière barrière de sécurité en forçant une vérification humaine sur des points que l'IA ne peut pas valider."
+        },
+        {
+            "id": "edit_raw_inputs",
+            "category": "Édition & Création",
+            "title": "Édition des Données Sources",
+            "description": "Dans le panneau de gauche du cockpit, l'utilisateur peut modifier les notes textuelles originales qui ont été transcrites ou saisies depuis l'application mobile.",
+            "type": "SHOULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Permet de corriger à la source les erreurs de transcription ou les oublis lors de la collecte initiale, améliorant la qualité de la génération IA."
+        },
+        {
+            "id": "mobile_sync_from_qr_code",
+            "category": "Acquisition Terrain",
+            "title": "Accès Mobile via QR Code",
+            "description": "Un QR Code affiché sur le cockpit web permet de scanner avec l'application mobile pour ouvrir et visualiser instantanément la fiche de cadenassage correspondante sur le terrain.",
+            "type": "COULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Facilite l'accès rapide à la bonne procédure directement sur le lieu d'intervention, améliorant l'efficacité et la sécurité."
+        },
+        {
+            "id": "magic_reformulation",
+            "category": "Édition & Création",
+            "title": "Bouton 'Magic Reformulation'",
+            "description": "Un bouton permet de demander à l'IA de réécrire ou d'améliorer le texte d'un champ spécifique pour plus de clarté ou de concision.",
+            "type": "COULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Permet d'améliorer rapidement la qualité rédactionnelle d'une instruction sans avoir à réfléchir à la meilleure tournure de phrase."
+        },
+        {
+            "id": "corrective_regeneration",
+            "category": "Conformité & Sécurité",
+            "title": "Régénération Corrective Assistée",
+            "description": "Face à un rapport de non-conformité, l'utilisateur peut demander à l'IA de tenter de corriger la fiche automatiquement en se basant sur les erreurs identifiées.",
+            "type": "COULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Accélère le processus de mise en conformité en laissant l'IA proposer des solutions aux problèmes qu'elle a elle-même détectés."
+        },
+        {
+            "id": "user_profile_management",
+            "category": "Gestion des Utilisateurs",
+            "title": "Profil Utilisateur Auto-géré",
+            "description": "Chaque utilisateur peut modifier ses propres informations de profil (Prénom, Nom, Titre, Photo) et changer son mot de passe.",
+            "type": "COULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Permet aux utilisateurs de maintenir leurs informations à jour, ce qui est essentiel pour la validité des signatures numériques."
+        },
+        {
+            "id": "advanced_data_exports",
+            "category": "Exports & Sorties",
+            "title": "Exports de Données Structurées",
+            "description": "Permet de télécharger/copier le JSON complet de la fiche ou les fichiers sources (images, notes) pour une intégration avec d'autres systèmes.",
+            "type": "COULD_HAVE",
+            "priority": "TERTIARY",
+            "userValue": "Offre une interopérabilité maximale en permettant d'utiliser les données brutes et structurées dans d'autres logiciels (ERP, GMAO)."
+        },
+        {
+            "id": "template_builder",
+            "category": "Configuration",
+            "title": "Constructeur de Gabarits Visuel",
+            "description": "Un constructeur visuel (drag & drop) permettant aux administrateurs de créer et de modifier eux-mêmes les gabarits de fiches de cadenassage au format JSON.",
+            "type": "WONT_HAVE",
+            "priority": "SECONDARY",
+            "userValue": "Offrirait une autonomie complète pour adapter l'application à différents standards ou départements sans intervention de développement."
+        }
+    ]
+}

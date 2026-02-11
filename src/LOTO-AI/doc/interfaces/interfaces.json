@@ -1,0 +1,133 @@
+{
+    "project_name": "LOTO-AI",
+    "unique_tags": [
+        "KPI Dashboard",
+        "Data Visualization",
+        "Reporting",
+        "Tree Navigation",
+        "Equipment Details",
+        "History",
+        "Card List",
+        "Filtering",
+        "Metrics",
+        "Visual Preview",
+        "Split View",
+        "AI Assistant",
+        "Form Builder",
+        "Properties Panel",
+        "Workflow",
+        "Compliance",
+        "Rules Engine",
+        "Settings",
+        "Annotation",
+        "Approval"
+    ],
+    "unique_categories": [
+        "Analytics",
+        "Asset Management",
+        "Dashboard",
+        "Editor",
+        "Administration",
+        "Workflow"
+    ],
+    "interfaces": [
+        {
+            "id": "loto_analytics",
+            "interface_name": "Team Productivity Analytics",
+            "description": "Tableau de bord analytique axé sur la performance des équipes de conformité. Il visualise le funnel de workflow (statuts des fiches), la répartition des sources d'énergie et les KPIs de productivité individuelle (vitesse d'approbation, taux de correction IA, incidents de sécurité).",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718204506_stitch_loto_sheets_dashboard_loto_sheets_dashboard_1/screen_1769718201066_951ff864-a050-4e81-a3c4-0cf457708f9f.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718204506_stitch_loto_sheets_dashboard_loto_sheets_dashboard_1/code_1769718200824_b3c71f74-1c64-4405-998b-c2664e170e60.html",
+            "category": "Analytics",
+            "tags": [
+                "KPI Dashboard",
+                "Data Visualization",
+                "Reporting"
+            ]
+        },
+        {
+            "id": "loto_assets",
+            "interface_name": "Equipment Asset Manager",
+            "description": "Gestionnaire d'actifs industriels avec navigation hiérarchique par usine. L'interface affiche les spécifications techniques, l'état opérationnel, les énergies actives et l'historique complet de maintenance d'un équipement sélectionné, servant de hub pour l'accès aux fiches LOTO associées.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718214350_stitch_loto_sheets_dashboard_loto_sheets_dashboard_2/screen_1769718210800_2b7d7a45-0f39-44dc-814a-3e9ccb77e797.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718214350_stitch_loto_sheets_dashboard_loto_sheets_dashboard_2/code_1769718210580_b99d7685-76f5-4b19-b5fd-ebded78523bf.html",
+            "category": "Asset Management",
+            "tags": [
+                "Tree Navigation",
+                "Equipment Details",
+                "History"
+            ]
+        },
+        {
+            "id": "loto_dashboard",
+            "interface_name": "Loto Sheets Dashboard",
+            "description": "Tableau de bord principal listant l'ensemble des fiches de consignation. Il offre une vue synthétique sous forme de cartes avec statut et image, des outils de filtrage et de recherche, ainsi que des métriques clés sur l'état global du parc de procédures.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718223184_stitch_loto_sheets_dashboard_loto_sheets_dashboard_3/screen_1769718219800_e975d1c8-8dd5-4c96-bbe4-edd23b918f5e.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718223184_stitch_loto_sheets_dashboard_loto_sheets_dashboard_3/code_1769718219409_db1c6a10-1704-4f61-b2b3-d04875d0a77a.html",
+            "category": "Dashboard",
+            "tags": [
+                "Card List",
+                "Filtering",
+                "Metrics"
+            ]
+        },
+        {
+            "id": "loto_editor_visual",
+            "interface_name": "Loto Editor (Visual Cockpit)",
+            "description": "Éditeur visuel de procédures LOTO ('Cockpit'). L'écran est divisé pour afficher l'aperçu final WYSIWYG de la fiche à côté du 'Investigation Hub' alimenté par l'IA. Cette vue permet de valider la mise en page, les instructions illustrées et les avertissements de sécurité.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/screen_1769718228710_289e5dba-cf38-4175-ac77-e0920bbf1e80.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718232298_stitch_loto_sheets_dashboard_loto_editor_cockpit_1/code_1769718228571_b8aadf9c-fc69-483a-bd37-a8bf58ef273e.html",
+            "category": "Editor",
+            "tags": [
+                "Visual Preview",
+                "Split View",
+                "AI Assistant"
+            ]
+        },
+        {
+            "id": "loto_editor_builder",
+            "interface_name": "Loto Step Builder",
+            "description": "Interface d'édition structurelle avec panneau de propriétés latéral ('Step Properties'). Conçue pour la saisie précise des étapes, elle permet de configurer le type d'énergie, les mécanismes et les instructions textuelles tout en gardant le contexte des actifs à gauche.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718242182_stitch_loto_sheets_dashboard_loto_editor_cockpit_2/screen_1769718238920_fe44f467-4e52-47a4-a434-9a4f6fcd883f.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718242182_stitch_loto_sheets_dashboard_loto_editor_cockpit_2/code_1769718238386_a9021ce3-ca75-475f-9c55-6d4ec77c934b.html",
+            "category": "Editor",
+            "tags": [
+                "Form Builder",
+                "Properties Panel",
+                "Workflow"
+            ]
+        },
+        {
+            "id": "loto_admin",
+            "interface_name": "Security Gatekeeper Config",
+            "description": "Console d'administration du moteur de conformité. Permet de définir les règles logiques (IF/THEN) de sécurité, d'importer les référentiels normatifs (CSA/OSHA) et de gérer les snippets de texte légaux obligatoires injectés dans les documents.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718252929_stitch_loto_sheets_dashboard_security_kit_configuration/screen_1769718249459_d037ec07-7150-4072-952d-1195949e0ade.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718252929_stitch_loto_sheets_dashboard_security_kit_configuration/code_1769718249106_0909dc5a-1365-466b-bc6a-a70a11b9accc.html",
+            "category": "Administration",
+            "tags": [
+                "Compliance",
+                "Rules Engine",
+                "Settings"
+            ]
+        },
+        {
+            "id": "loto_auditor",
+            "interface_name": "Auditor Review Portal",
+            "description": "Portail dédié aux auditeurs pour la validation des fiches. L'interface permet d'ajouter des annotations (critiques ou suggestions), de visualiser les vérifications automatiques de l'IA et de signer électroniquement le document final avant publication.",
+            "device_type": "Desktop",
+            "image_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718263998_stitch_loto_sheets_dashboard_loto_editor_cockpit_3/screen_1769718260538_2031a038-364b-4417-a96b-45b35e41de6d.png",
+            "html_url": "https://ii-file.tor1.digitaloceanspaces.com/v0/ae1ba930-c442-4053-b8a8-836ed340a3c8/interfaces/1769718263998_stitch_loto_sheets_dashboard_loto_editor_cockpit_3/code_1769718260293_e9d153e3-74a7-4a76-a30b-b230c7b5e5fa.html",
+            "category": "Workflow",
+            "tags": [
+                "Annotation",
+                "Approval",
+                "Compliance"
+            ]
+        }
+    ]
+}

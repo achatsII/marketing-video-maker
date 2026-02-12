@@ -1,13 +1,13 @@
 import { Composition } from "remotion";
-import { Video_QuestionnerUnExpert } from "./Questionner un expert/Video";
+import { Video_QuestionnerUnExpert } from "./products/QuestionnerUnExpert-V1/Video";
 
-import { Video_LOTOAI } from "./LOTO-AI/Video";
-import { TestSceneRefinedMacbook } from "./LOTO-AI/scenes/TestSceneRefinedMacbook";
-import { Video_QuestionnerUnExpert_Mobile } from "./Questionner un expert - V2/Video";
-import { VideoTest } from "./VideoTest/Video";
-import { SceneFadeText } from "./VideoTest/scenes/SceneFadeText";
-import { SceneFadeTextBubbles } from "./VideoTest/scenes/SceneFadeTextBubbles";
-import { SceneImmersiveBubbles } from "./VideoTest/scenes/SceneImmersiveBubbles";
+import { Video_LOTOAI } from "./products/LOTO-AI/Video";
+import { TestSceneRefinedMacbook } from "./products/LOTO-AI/scenes/TestSceneRefinedMacbook";
+import { Video_QuestionnerUnExpert_Mobile } from "./products/QuestionnerUnExpert-V2/Video";
+import { VideoTest } from "./products/VideoTest/Video";
+import { SceneFadeText } from "./_library/scenes/SceneFadeText";
+import { SceneFadeTextBubbles } from "./_library/scenes/SceneFadeTextBubbles";
+import { SceneImmersiveBubbles } from "./_library/scenes/SceneImmersiveBubbles";
 import "./index.css";
 
 export const RemotionRoot: React.FC = () => {
@@ -42,7 +42,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="VideoTest"
         component={VideoTest}
-        durationInFrames={1830}
+        durationInFrames={2670}
         fps={30}
         width={1920}
         height={1080}

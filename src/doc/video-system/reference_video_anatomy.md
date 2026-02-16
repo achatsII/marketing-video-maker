@@ -1,7 +1,7 @@
 # Reference Video Anatomy: "VideoTest"
 
 ## Overview
-This document deconstructs the reference video (`src/products/VideoTest/Video.tsx`) to establish the "Gold Standard" for motion design SaaS explainer videos in this project.
+This document deconstructs the reference video (`src/products/VideoTest/V1/Video.tsx`) to establish the "Gold Standard" for motion design SaaS explainer videos in this project.
 
 ## Core Philosophy
 - **Style**: Dark mode, sleek, high-end "Linear-style" or "Apple-style" aesthetics.

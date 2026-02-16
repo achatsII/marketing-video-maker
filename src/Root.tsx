@@ -1,12 +1,12 @@
 import { Composition } from "remotion";
-import { Video_QuestionnerUnExpert } from "./products/QuestionnerUnExpert-V1/Video";
-import { Video_LOTOAI } from "./products/LOTO-AI/Video";
+import { Video_QuestionnerUnExpert } from "./products/QuestionnerUnExpert/V1/Video";
+import { Video_LOTOAI } from "./products/LOTO-AI/V1/Video";
 
-import { Video_LOTOAIV4 } from "./products/LOTO-AI-V4/Video";
-import { LotoAiV3Video } from "./products/LOTO-AI-V3/Video";
-import { Video_LOTOAI_V2 } from "./products/LOTO-AI-V2/Video";
-import { Video_QuestionnerUnExpert_Mobile } from "./products/QuestionnerUnExpert-V2/Video";
-import { VideoTest } from "./products/VideoTest/Video";
+import { Video_LOTOAIV4 } from "./products/LOTO-AI/V4/Video";
+import { LotoAiV3Video } from "./products/LOTO-AI/V3/Video";
+import { Video_LOTOAI_V2 } from "./products/LOTO-AI/V2/Video";
+import { Video_QuestionnerUnExpert_Mobile } from "./products/QuestionnerUnExpert/V2/Video";
+import { VideoTest } from "./products/VideoTest/V1/Video";
 import { SceneFadeText } from "./_library/scenes/SceneFadeText";
 
 import "./index.css";

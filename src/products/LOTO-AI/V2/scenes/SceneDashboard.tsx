@@ -1,12 +1,12 @@
 ﻿import { useCurrentFrame, useVideoConfig, interpolate, spring } from "remotion";
 import { NeonGradientCard } from "@/_core/components/remotion/NeonGradientCard";
-import { DashboardUI } from "@/products/QuestionnerUnExpert/V1/ui/DashboardUI";
+import { DashboardUI } from "@/products/LOTO-AI/V2/ui/DashboardUI";
+import { FadeText } from "@/_core/components/remotion/FadeText";
 
 export const SceneDashboard: React.FC = () => {
     const frame = useCurrentFrame();
     const { fps, durationInFrames } = useVideoConfig();
 
-    // Cinematic 3D entry
     const entryProgress = spring({
         frame,
         fps,
@@ -18,29 +18,32 @@ export const SceneDashboard: React.FC = () => {
     const translateY = interpolate(entryProgress, [0, 1], [100, 0]);
     const opacity = entryProgress;
 
-    // Scale drift
     const scale = interpolate(frame, [0, 180], [1, 1.03], {
         extrapolateRight: "clamp",
     });
 
-    // Fade out
     const fadeOutStart = durationInFrames - 20;
-    const fadeOut = interpolate(frame, [fadeOutStart, durationInFrames], [1, 0], {
-        extrapolateLeft: "clamp",
-        extrapolateRight: "clamp",
-    });
-
-    const blurOut = interpolate(frame, [fadeOutStart, durationInFrames], [0, 20], {
-        extrapolateLeft: "clamp",
-        extrapolateRight: "clamp",
-    });
+    const fadeOut = interpolate(frame, [fadeOutStart, durationInFrames], [1, 0]);
+    const blurOut = interpolate(frame, [fadeOutStart, durationInFrames], [0, 20]);
 
     return (
         <div style={{ width: 1920, height: 1080, overflow: "hidden", opacity: fadeOut, filter: `blur(${blurOut}px)` }}>
+            {/* Title Text */}
+            <div className="absolute top-20 left-0 right-0 z-0 flex justify-center">
+                <FadeText
+                    text="Productivité Maximisée"
+                    className="text-7xl font-bold text-white leading-tight text-center"
+                    delay={100}
+                    startFrame={0}
+                    auroraWords={["Maximisée"]}
+                />
+            </div>
+
             <div
                 style={{
                     position: "absolute",
                     inset: 0,
+                    top: 100, // Push down slightly
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -60,7 +63,7 @@ export const SceneDashboard: React.FC = () => {
                     height={600}
                     borderRadius={20}
                     borderSize={2}
-                    neonColors={{ firstColor: "#0078FF", secondColor: "#00C6FF" }}
+                    neonColors={{ firstColor: "#D32F2F", secondColor: "#FF5252" }} // Red neon
                 >
                     <DashboardUI statsDelay={15} chartDelay={35} />
                 </NeonGradientCard>

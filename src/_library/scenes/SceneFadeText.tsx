@@ -1,6 +1,6 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Sequence } from 'remotion';
-import { FadeText } from '@/_core/components/FadeText';
-import { DiagonalWipe } from '@/_core/components/DiagonalWipe';
+import { FadeText } from '@/_core/components/remotion/FadeText';
+import { DiagonalWipe } from '@/_core/components/remotion/DiagonalWipe';
 
 export const SceneFadeText: React.FC = () => {
     const frame = useCurrentFrame();

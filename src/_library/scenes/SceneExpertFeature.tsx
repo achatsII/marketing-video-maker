@@ -1,12 +1,17 @@
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Img } from "remotion";
-import { FadeText } from "@/_core/components/FadeText";
+﻿import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Img } from "remotion";
+import { FadeText } from "@/_core/components/remotion/FadeText";
 import { IPhoneFrame } from "@/_core/components/remotion/iPhone";
-import { LargeNotificationUI } from "@/products/QuestionnerUnExpert-V2/ui/LargeNotificationUI";
+import { LargeNotificationUI } from "@/products/VideoTest/V1/ui/LargeNotificationUI";
 import { AnimatedList } from "@/_core/components/remotion/AnimatedList";
-import { LargeNotificationItem } from "@/products/QuestionnerUnExpert-V2/ui/LargeNotificationItem";
+import { LargeNotificationItem } from "@/products/VideoTest/V1/ui/LargeNotificationItem";
 
 // Use relative path to ensure resolution, and import properly.
-import fondEcranIPhone from "../../products/QuestionnerUnExpert-V2/fondEcranIPhone.jpg";
+// Since we are in _library/scenes, we need to point to the asset.
+// If the asset is still in QuestionnerUnExpert, we keep it, or move it.
+// The user asked to move UI interfaces. I will assume the image is part of the UI or should stay.
+// However, the previous fix pointed to QuestionnerUnExpert/V2. I will keep it there for the image for now unless I move it too.
+// Wait, LargeNotificationUI might rely on it.
+import fondEcranIPhone from "../../products/QuestionnerUnExpert/V2/fondEcranIPhone.jpg";
 
 
 export const SceneExpertFeature: React.FC = () => {
@@ -275,3 +280,4 @@ export const SceneExpertFeature: React.FC = () => {
         </AbsoluteFill>
     );
 };
+

@@ -24,8 +24,10 @@ You are an expert Motion Design Engineer specializing in Remotion. Your task is 
     *   **Outro**: `SceneLogoOutro` using the "CTA" text.
 4.  **Phase 3: Coding**:
     *   Create a new directory `src/products/[ProductName]`.
-    *   Create `Video.tsx` combining the scenes.
-    *   Create `scenes/` subdirectory for any custom UI animations.
+    *   Inside it, create a `V1` subdirectory (e.g., `src/products/[ProductName]/V1`).
+    *   Create `Video.tsx` combining the scenes inside `V1`.
+    *   Create `scenes/` subdirectory inside `V1` for any custom UI animations.
+    *   Place documentation in `src/products/[ProductName]/doc`.
 
 ## Prompting Strategy
 When generating code, always prioritize **smoothness over complexity**.

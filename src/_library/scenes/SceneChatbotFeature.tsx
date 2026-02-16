@@ -1,7 +1,7 @@
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
-import { FadeText } from "@/_core/components/FadeText";
+﻿import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
+import { FadeText } from "@/_core/components/remotion/FadeText";
 import { IPhoneFrame } from "@/_core/components/remotion/iPhone";
-import { SimplifiedChatUI } from "@/products/QuestionnerUnExpert-V2/ui/SimplifiedChatUI";
+import { SimplifiedChatUI } from "@/products/QuestionnerUnExpert/V2/ui/SimplifiedChatUI";
 
 export const SceneChatbotFeature: React.FC = () => {
     const frame = useCurrentFrame();
@@ -116,3 +116,4 @@ export const SceneChatbotFeature: React.FC = () => {
         </AbsoluteFill>
     );
 };
+

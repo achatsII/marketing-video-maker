@@ -14,6 +14,7 @@ export const BackgroundGradientAnimation = ({
   children,
   className,
   containerClassName,
+  opacity = 1,
 }: {
   gradientBackgroundStart?: string;
   gradientBackgroundEnd?: string;
@@ -27,6 +28,7 @@ export const BackgroundGradientAnimation = ({
   children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  opacity?: number;
 }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -73,7 +75,13 @@ export const BackgroundGradientAnimation = ({
       >
         {children}
       </div>
-      <div className="absolute inset-0 blur-lg" style={{ filter: "blur(40px)" }}>
+      <div
+        className="absolute inset-0 blur-lg transition-opacity duration-500 will-change-[opacity]" // Smooth generic transition, but controlled by frame
+        style={{
+          filter: "blur(40px)",
+          opacity
+        }}
+      >
         <div style={blobStyle(firstColor, blob1X, blob1Y)} />
         <div style={blobStyle(secondColor, blob2X, blob2Y)} />
         <div style={blobStyle(thirdColor, blob3X, blob3Y)} />

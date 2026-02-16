@@ -7,7 +7,7 @@ import { SceneFusionChatbotProduct } from "./scenes/SceneFusionChatbotProduct";
 import { Scene5Expert } from "./scenes/Scene5Expert";
 
 import { Scene6Knowledge } from "./scenes/Scene6Knowledge";
-import { Scene7Dashboard } from "./scenes/Scene7Dashboard";
+import { SceneDashboard } from "@/_library/scenes/SceneDashboard";
 import { Scene8CTA } from "./scenes/Scene8CTA";
 
 export const Video_QuestionnerUnExpert: React.FC = () => {
@@ -58,7 +58,7 @@ export const Video_QuestionnerUnExpert: React.FC = () => {
 
       {/* Scene 7 — Dashboard reveal (0:35-0:41, 180 frames) */}
       <Sequence from={1050} durationInFrames={180}>
-        <Scene7Dashboard />
+        <SceneDashboard />
       </Sequence>
 
       {/* Scene 8 — CTA / Closing (0:41-0:46, 150 frames) */}

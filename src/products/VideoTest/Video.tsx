@@ -3,17 +3,15 @@ import { AbsoluteFill } from "remotion";
 import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { SceneFloatingBubbles } from "@/_library/scenes/SceneFloatingBubbles";
-import { SceneLogoIntro } from "@/_library/scenes/SceneLogoIntro";
+import { SceneLogoOutro } from "@/_library/scenes/SceneLogoOutro";
 import { GenericFadeTextScene } from "@/_library/scenes/GenericFadeTextScene";
-import { SceneRespondVariations } from "@/_library/scenes/SceneRespondVariations";
-import { SceneFadeTextBubbles } from "@/_library/scenes/SceneFadeTextBubbles";
 import { BackgroundGradientAnimation } from "@/_core/components/remotion/BackgroundGradientAnimation";
 import { SceneTypewriter } from "@/_library/scenes/SceneTypewriter";
-import { SceneChatbotFeature } from "@/_library/scenes/SceneChatbotFeature";
-
-
-import { SceneChatbotFeatureAltV2 } from "@/_library/scenes/SceneChatbotFeatureAltV2";
+import { SceneDashboard } from "@/_library/scenes/SceneDashboard";
+import { SceneChatbotFeatureV2 } from "@/_library/scenes/SceneChatbotFeatureV2";
+import { SceneAppNameReveal } from "@/_library/scenes/SceneAppNameReveal";
 import { SceneExpertFeature } from "@/_library/scenes/SceneExpertFeature";
+
 export const VideoTest: React.FC = () => {
     return (
         <AbsoluteFill>
@@ -30,13 +28,29 @@ export const VideoTest: React.FC = () => {
                 containerClassName="absolute inset-0"
             >
                 <TransitionSeries>
-                    <TransitionSeries.Sequence durationInFrames={110}>
+                    <TransitionSeries.Sequence durationInFrames={110} className="bg-black">
                         <GenericFadeTextScene
                             sequenceDuration={110}
                             text="Et si vous mettiez fin aux questions sans réponses ?"
                             auroraWords={["questions", "réponses"]}
+                            initialDelay={1000}
                         />
                     </TransitionSeries.Sequence>
+
+                    <TransitionSeries.Sequence durationInFrames={90} className="bg-black">
+                        <GenericFadeTextScene
+                            sequenceDuration={90}
+                            text="La réponse est à portée de main"
+                            auroraWords={["main", "réponse"]}
+                            maxWordsPerLine={4}
+                        />
+                    </TransitionSeries.Sequence>
+
+
+                    <TransitionSeries.Sequence durationInFrames={130}>
+                        <SceneAppNameReveal />
+                    </TransitionSeries.Sequence>
+
 
                     <TransitionSeries.Sequence durationInFrames={60} >
                         <GenericFadeTextScene
@@ -59,7 +73,7 @@ export const VideoTest: React.FC = () => {
 
                     {/* ─── Alternative V2: Spring scroll ─── */}
                     <TransitionSeries.Sequence durationInFrames={180}>
-                        <SceneChatbotFeatureAltV2 />
+                        <SceneChatbotFeatureV2 />
                     </TransitionSeries.Sequence>
                     <TransitionSeries.Transition presentation={fade()} timing={linearTiming({ durationInFrames: 10 })} />
 
@@ -71,11 +85,27 @@ export const VideoTest: React.FC = () => {
                     </TransitionSeries.Sequence>
                     <TransitionSeries.Transition presentation={fade()} timing={linearTiming({ durationInFrames: 10 })} />
 
-                    <TransitionSeries.Sequence durationInFrames={400}>
+                    <TransitionSeries.Sequence durationInFrames={280}>
                         <SceneExpertFeature />
                     </TransitionSeries.Sequence>
 
+                    <TransitionSeries.Sequence durationInFrames={60} >
+                        <GenericFadeTextScene
+                            sequenceDuration={60}
+                            text="Plus qu'un chatbot"
+                            maxWordsPerLine={4}
 
+                        />
+                    </TransitionSeries.Sequence>
+
+                    <TransitionSeries.Sequence durationInFrames={60} >
+                        <GenericFadeTextScene
+                            sequenceDuration={60}
+                            text="Un relais d'experts"
+                            maxWordsPerLine={4}
+                            auroraWords={["Un", "relais", "d'experts"]}
+                        />
+                    </TransitionSeries.Sequence>
 
                     <TransitionSeries.Sequence durationInFrames={100} >
                         <GenericFadeTextScene
@@ -95,9 +125,20 @@ export const VideoTest: React.FC = () => {
                         />
                     </TransitionSeries.Sequence>
 
+                    <TransitionSeries.Transition presentation={fade()} timing={linearTiming({ durationInFrames: 10 })} />
+
                     <TransitionSeries.Sequence durationInFrames={100}>
-                        <SceneLogoIntro />
+                        <SceneDashboard />
                     </TransitionSeries.Sequence>
+
+                    <TransitionSeries.Sequence durationInFrames={100}>
+                        {/* <SceneLogoIntro /> */}
+                        <SceneLogoOutro />
+                    </TransitionSeries.Sequence>
+
+
+
+
                 </TransitionSeries>
             </BackgroundGradientAnimation>
         </AbsoluteFill>

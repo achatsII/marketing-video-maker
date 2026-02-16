@@ -16,18 +16,31 @@ export const SceneExpertFeature: React.FC = () => {
     // --- Phone Animation (from SceneChatbotFeature) ---
     const showPhone = frame >= 0;
 
+    const EXIT_START = 260; // Start exit animation to finish by frame 300
+
     const phoneProgress = spring({
         frame: frame,
         fps,
         config: { damping: 18, stiffness: 60, mass: 1.2 },
     });
 
+    const phoneExitProgress = spring({
+        frame: frame - EXIT_START,
+        fps,
+        config: { damping: 20, stiffness: 80 },
+    });
+
     const phoneScale = interpolate(phoneProgress, [0, 1], [0.8, 1]);
     const phoneOpacity = interpolate(phoneProgress, [0, 0.3], [0, 1], {
         extrapolateRight: "clamp",
     });
+
+    // Entrance: 800 -> 0. Exit: 0 -> -1000 (slide up)
+    const phoneEntranceY = interpolate(phoneProgress, [0, 1], [800, 0]);
+    const phoneExitY = interpolate(phoneExitProgress, [0, 1], [0, -2000]);
+    const phoneY = phoneEntranceY + phoneExitY;
+
     const phoneRotateX = interpolate(phoneProgress, [0, 1], [25, 0]);
-    const phoneY = interpolate(phoneProgress, [0, 1], [800, 0]);
 
 
     // --- Inner Phone Content Logic (from Scene5_ExpertFeature_Alt) ---
@@ -66,26 +79,47 @@ export const SceneExpertFeature: React.FC = () => {
     const text1OpacityCombined = text1Fade * text1FadeOut;
     const text1BlurCombined = frame > UNLOCK_START_FRAME ? text1BlurOut : text1Blur;
 
+    // Typing Timing Calculation
+    // In LargeNotificationUI:
+    // TYPING_START_FRAME (local) = 60
+    // Global Typing Start = UNLOCK_START_FRAME + 60 = 60 + 60 = 120
+    // Text Length approx 75 chars -> 75 frames duration
+    // Global Typing End = 120 + 75 = 195
+    const TYPING_GLOBAL_START = UNLOCK_START_FRAME + 60;
+    const TYPING_GLOBAL_END = TYPING_GLOBAL_START + 75;
+
     // Text 2: "Et répond à votre question"
-    // Appears after unlock/reply
-    const TEXT_2_START = 100;
-    const showText2 = frame >= TEXT_2_START && frame < 280;
+    // Appears when typing starts (120)
+    // Disappears when typing ends (195)
+    const TEXT_2_START = TYPING_GLOBAL_START;
+    const TEXT_2_END = TYPING_GLOBAL_END;
+
+    const showText2 = frame >= TEXT_2_START && frame < TEXT_2_END + 10;
     const text2Fade = interpolate(frame, [TEXT_2_START, TEXT_2_START + 20], [0, 1], { extrapolateRight: "clamp" });
     const text2Blur = interpolate(frame, [TEXT_2_START, TEXT_2_START + 20], [10, 0], { extrapolateRight: "clamp" });
 
-    const text2FadeOut = interpolate(frame, [270, 280], [1, 0], { extrapolateRight: "clamp" });
-    const text2BlurOut = interpolate(frame, [270, 280], [0, 10], { extrapolateRight: "clamp" });
+    const text2FadeOut = interpolate(frame, [TEXT_2_END, TEXT_2_END + 10], [1, 0], { extrapolateRight: "clamp" });
+    const text2BlurOut = interpolate(frame, [TEXT_2_END, TEXT_2_END + 10], [0, 10], { extrapolateRight: "clamp" });
 
     const text2OpacityCombined = text2Fade * text2FadeOut;
-    const text2BlurCombined = frame > 270 ? text2BlurOut : text2Blur;
+    const text2BlurCombined = frame > TEXT_2_END ? text2BlurOut : text2Blur;
 
 
     // Text 3: "Ce qui enrichira votre base de connaissances"
-    // Appears at end
-    const TEXT_3_START = 280;
+    // Appears at end of typing (195)
+    // Disappears later with blur at EXIT_START
+    const TEXT_3_START = TYPING_GLOBAL_END;
+    const TEXT_3_END = EXIT_START - 10; // Fade out when phone starts leaving
+
     const showText3 = frame >= TEXT_3_START;
     const text3Fade = interpolate(frame, [TEXT_3_START, TEXT_3_START + 20], [0, 1], { extrapolateRight: "clamp" });
     const text3Blur = interpolate(frame, [TEXT_3_START, TEXT_3_START + 20], [10, 0], { extrapolateRight: "clamp" });
+
+    const text3FadeOut = interpolate(frame, [TEXT_3_END, TEXT_3_END + 20], [1, 0], { extrapolateRight: "clamp" });
+    const text3BlurOut = interpolate(frame, [TEXT_3_END, TEXT_3_END + 20], [0, 10], { extrapolateRight: "clamp" });
+
+    const text3OpacityCombined = text3Fade * text3FadeOut;
+    const text3BlurCombined = frame > TEXT_3_END ? text3BlurOut : text3Blur;
 
 
     // --- Layout Fixed to Variant 1 (Left - Right - Right) ---
@@ -114,8 +148,8 @@ export const SceneExpertFeature: React.FC = () => {
                         <div
                             className={`absolute ${t1Pos} ${topPos} w-[25%] z-20`}
                             style={{
-                                opacity: text1FadeOut, // Only exit fade
-                                filter: `blur(${text1BlurOut}px)` // Only exit blur
+                                opacity: text1OpacityCombined,
+                                filter: `blur(${text1BlurCombined}px)`
                             }}
                         >
                             <FadeText
@@ -173,7 +207,7 @@ export const SceneExpertFeature: React.FC = () => {
                                             <AnimatedList startFrame={NOTIFICATION_DELAY} staggerFrames={10}>
                                                 <LargeNotificationItem
                                                     name="ExpertFlow"
-                                                    description="Vous avez une nouvelle question à répondre"
+                                                    description="Quelles sont les limitations de l'API ?"
                                                     time="Maintenant"
                                                     color="#3b82f6"
                                                     icon={
@@ -203,8 +237,8 @@ export const SceneExpertFeature: React.FC = () => {
                         <div
                             className={`absolute ${t2Pos} ${topPos} w-[25%] z-20`}
                             style={{
-                                opacity: text2FadeOut, // Only exit fade
-                                filter: `blur(${text2BlurOut}px)` // Only exit blur
+                                opacity: text2OpacityCombined,
+                                filter: `blur(${text2BlurCombined}px)`
                             }}
                         >
                             <FadeText
@@ -222,7 +256,8 @@ export const SceneExpertFeature: React.FC = () => {
                         <div
                             className={`absolute ${t3Pos} ${topPos} w-[25%] z-20`}
                             style={{
-                                // No exit animation needed for Text 3 as it stays
+                                opacity: text3OpacityCombined,
+                                filter: `blur(${text3BlurCombined}px)`
                             }}
                         >
                             <FadeText

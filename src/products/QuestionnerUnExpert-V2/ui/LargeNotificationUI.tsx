@@ -54,7 +54,7 @@ export const LargeNotificationUI: React.FC<LargeNotificationUIProps> = ({
     const TYPING_START_FRAME = 60;  // Expert starts typing
     const TAP_SUBMIT_FRAME = 190;   // User taps submit (after typing completes)
 
-    const fullResponse = "Pour configurer le SSO, accédez à Paramètres > Sécurité. Copiez l'URL de métadonnées et importez-la dans votre IdP.";
+    const fullResponse = "L'API est limitée à 1000 requêtes/min. Au-delà, une erreur 429 est renvoyée.";
 
     const priorityColors = {
         high: "#ef4444",
@@ -66,7 +66,7 @@ export const LargeNotificationUI: React.FC<LargeNotificationUIProps> = ({
     const notifications: NotificationItem[] = [
         {
             id: "1",
-            question: "Comment configurer l'authentification SSO pour les nouveaux clients ?",
+            question: "Quelles sont les limitations de l'API ?",
             author: "Marie L.",
             time: "Il y a 5 min",
             priority: "high",
